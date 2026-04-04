@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles', ({ data }) => !data.draft);
+const latestArticles = allArticles
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .slice(0, 6);
+
+const allProducts = await getCollection('products', ({ data }) => !data.draft);
+const featuredProducts = allProducts.slice(0, 3);
+---
+
+<BaseLayout title="LogisticsEdge">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__inner">
+      <h1 class="hero__title">UK Logistics Intelligence</h1>
+      <p class="hero__subtitle">
+        Practical insight on customs compliance, freight operations, and supply chain strategy
+        for logistics professionals working in and with the UK.
+      </p>
+    </div>
+  </section>
+
+  <!-- Latest Articles -->
+  <section class="section container">
+    <h2 class="section__heading">Latest Articles</h2>
+    {latestArticles.length > 0 ? (
+      <div class="card-grid">
+        {latestArticles.map((article) => {
+          const date = new Date(article.data.pubDate).toLocaleDateString('en-GB', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric',
+          });
+          return (
+            <article class="card">
+              <p class="card__category">{article.data.category}</p>
+              <h3 class="card__title">
+                <a href={`/articles/${article.id}/`}>{article.data.title}</a>
+              </h3>
+              <p class="card__description">{article.data.description}</p>
+              <p class="card__meta">{date}</p>
+            </article>
+          );
+        })}
+      </div>
+    ) : (
+      <p>Articles coming soon. Check back shortly.</p>
+    )}
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section container">
+    <h2 class="section__heading">Products &amp; Resources</h2>
+    {featuredProducts.length > 0 ? (
+      <div class="card-grid">
+        {featuredProducts.map((product) => (
+          <article class="card">
+            <p class="card__category">{product.data.type}</p>
+            <h3 class="card__title">
+              <a href={`/products/${product.id}/`}>{product.data.title}</a>
+            </h3>
+            <p class="card__description">{product.data.description}</p>
+            <p class="card__meta">{product.data.price}</p>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p>Products and resources launching soon.</p>
+    )}
+  </section>
+
+  <!-- Email CTA -->
+  <section class="container">
+    <div class="cta-section">
+      <h2 class="cta-section__title">Stay informed</h2>
+      <p class="cta-section__text">
+        Get practical UK logistics and customs insight delivered to your inbox.
+        No fluff, no spam.
+      </p>
+      <!-- Replace with your email signup form -->
+      <a href="#" class="btn btn--primary">Subscribe</a>
+    </div>
+  </section>
+</BaseLayout>

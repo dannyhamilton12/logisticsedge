@@ -1,0 +1,80 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title,
+  description = 'UK logistics, customs, and supply chain intelligence for professionals.',
+  image,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = image ? new URL(image, Astro.site).href : undefined;
+const fullTitle = title === 'LogisticsEdge' ? title : `${title} | LogisticsEdge`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+    <link rel="alternate" type="application/rss+xml" title="LogisticsEdge" href="/rss.xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/" class="site-header__logo">Logistics<span>Edge</span></a>
+        <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">&#9776;</button>
+        <nav>
+          <ul class="site-nav" id="site-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/products/">Products</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; {new Date().getFullYear()} LogisticsEdge. All rights reserved.</p>
+        <p class="site-footer__tagline">LogisticsEdge &mdash; UK Logistics Intelligence</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('nav-toggle')?.addEventListener('click', () => {
+        document.getElementById('site-nav')?.classList.toggle('is-open');
+      });
+    </script>
+  </body>
+</html>

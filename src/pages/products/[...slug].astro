@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  return products.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { title, description, price, type, tags } = entry.data;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="container container--narrow">
+    <header class="article-header">
+      <p class="article-header__category">{type}</p>
+      <h1 class="article-header__title">{title}</h1>
+      <div class="article-header__meta">
+        <span>{price}</span>
+      </div>
+      {tags && tags.length > 0 && (
+        <div class="article-header__tags">
+          {tags.map((tag: string) => (
+            <span class="tag">{tag}</span>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <div class="prose">
+      <Content />
+    </div>
+  </div>
+</BaseLayout>

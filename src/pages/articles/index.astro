@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('articles', ({ data }) => !data.draft);
+const sortedArticles = articles.sort(
+  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+---
+
+<BaseLayout title="Articles" description="UK logistics, customs, and supply chain articles and analysis.">
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-header__title">Articles</h1>
+      <p class="page-header__description">
+        Analysis, guides, and insight on UK logistics, customs compliance, and supply chain operations.
+      </p>
+    </header>
+
+    {sortedArticles.length > 0 ? (
+      <div class="card-grid">
+        {sortedArticles.map((article) => {
+          const date = new Date(article.data.pubDate).toLocaleDateString('en-GB', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric',
+          });
+          return (
+            <article class="card">
+              <p class="card__category">{article.data.category}</p>
+              <h2 class="card__title">
+                <a href={`/articles/${article.id}/`}>{article.data.title}</a>
+              </h2>
+              <p class="card__description">{article.data.description}</p>
+              <p class="card__meta">{date}</p>
+            </article>
+          );
+        })}
+      </div>
+    ) : (
+      <p>No articles published yet. Check back soon.</p>
+    )}
+  </div>
+</BaseLayout>
