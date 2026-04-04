@@ -21,7 +21,7 @@ draft: false
 
 ## What is import duty?
 
-Import duty is a tax charged by HMRC on goods brought into the UK from abroad. It is calculated as a percentage of the goods' customs value and must be paid before goods are released from customs control — unless you hold a deferment account or use one of the relief schemes covered later in this guide.
+Import duty is a tax charged by HMRC on goods brought into the UK from abroad. It is calculated as a percentage of the goods' customs value and must be paid before goods are released from [customs control](/articles/customs-clearance-uk-step-by-step-guide/) — unless you hold a deferment account or use one of the relief schemes covered later in this guide. To import goods, you will first need a valid [EORI number](/articles/eori-number-uk-complete-guide/).
 
 The terms "import duty", "customs duty", and "import tax" are often used interchangeably. Strictly speaking, customs duty refers to the tariff charged on the goods themselves, while import tax can also encompass import VAT (charged at 20% on top of the goods' value plus duty) and excise duty on products such as alcohol, tobacco, and fuel. For most importers, the practical concern is the same: what is the total cost of getting goods through the UK border?
 
@@ -35,7 +35,7 @@ Not always. There are thresholds and exemptions that determine whether duty appl
 
 **Gifts.** Personal gifts sent to the UK worth up to £630 are eligible for duty relief. Between £135 and £630, a flat-rate duty of 2.5% applies if the recipient does not want to use the full tariff classification.
 
-**EU to UK.** There is no automatic duty exemption for goods from the EU. Since Brexit, EU imports are treated the same as those from the rest of the world. However, the EU-UK Trade and Cooperation Agreement (TCA) provides 0% preferential duty rates on qualifying goods — provided rules of origin are met and properly claimed. This is a critical distinction that many businesses still get wrong.
+**EU to UK.** There is no automatic duty exemption for goods from the EU. Since Brexit, EU imports are treated the same as those from the rest of the world. However, the EU-UK Trade and Cooperation Agreement (TCA) provides 0% preferential duty rates on qualifying goods — provided rules of origin are met and properly claimed. This is a critical distinction that many businesses still get wrong. Understanding [incoterms](/articles/incoterms-explained-visual-uk-guide/) is also essential, as they determine who is responsible for duty payment.
 
 **Excise goods.** Alcohol, tobacco, and fuel attract excise duty in addition to any customs duty and VAT, regardless of value.
 

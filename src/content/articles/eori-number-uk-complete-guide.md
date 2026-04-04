@@ -113,7 +113,7 @@ Having an EORI number is only the first step. Using it correctly on every custom
 
 **Where your EORI must appear:**
 
-- All customs declarations submitted through CDS
+- All [customs declarations](/articles/customs-clearance-uk-step-by-step-guide/) submitted through CDS
 - Commercial invoices accompanying international shipments
 - Import and export licences
 - Safety and security declarations (Entry Summary Declarations for imports, Exit Summary Declarations for exports)
@@ -174,7 +174,7 @@ Brexit fundamentally changed the EORI landscape for UK businesses. Here is what 
 
 **The practical impact:**
 
-If you traded exclusively with the EU before Brexit and never dealt with customs declarations, you now need to engage with the full UK customs process — starting with your EORI number. Many businesses that exported freely across Europe before 2021 discovered after Brexit that they did not have a valid, active EORI number set up for the new trading arrangements.
+If you traded exclusively with the EU before Brexit and never dealt with customs declarations, you now need to engage with the full UK customs process — starting with your EORI number. Our [customs clearance guide](/articles/customs-clearance-uk-step-by-step-guide/) covers the declaration process, and our [import duty guide](/articles/import-duty-uk-complete-guide/) explains how duty rates are determined using [commodity codes](/articles/uk-commodity-codes-tariff-classification-guide/). Many businesses that exported freely across Europe before 2021 discovered after Brexit that they did not have a valid, active EORI number set up for the new trading arrangements.
 
 ## Summary: Your EORI Checklist
 

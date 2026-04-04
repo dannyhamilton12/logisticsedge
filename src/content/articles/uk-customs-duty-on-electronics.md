@@ -5,6 +5,7 @@ pubDate: 2026-04-04
 author: "LogisticsEdge"
 category: "customs"
 tags: ["customs-duty", "electronics", "import-tax", "consumer-goods"]
+image: "/images/articles/uk-customs-duty-on-electronics.jpg"
 draft: false
 ---
 

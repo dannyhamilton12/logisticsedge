@@ -193,6 +193,8 @@ When in doubt, FCA for exports and DAP for imports are reliable defaults for mos
 
 - [EORI Number UK: The Complete Guide](/articles/eori-number-uk-complete-guide/) — essential for any business handling UK import or export clearance
 - [Customs Clearance UK: The Complete Step-by-Step Guide](/articles/customs-clearance-uk-step-by-step-guide/) — the process that Incoterms determine who is responsible for
+- [Import Duty UK: The Complete Guide](/articles/import-duty-uk-complete-guide/) — how duty is calculated and how to reduce it
+- [UK Commodity Codes Guide](/articles/uk-commodity-codes-tariff-classification-guide/) — classifying goods correctly for customs
 - [ICC Incoterms 2020](https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/) — the official ICC publication and reference
 - [GOV.UK: Trade with the EU](https://www.gov.uk/business-uk-eu) — HMRC guidance on post-Brexit customs requirements
 

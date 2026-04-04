@@ -32,7 +32,7 @@ In practice, a 3PL provider might handle:
 * **Transport and distribution** — moving goods to end customers or retail locations
 * **Returns processing** — managing reverse logistics when customers send products back
 * **Inventory management** — tracking stock levels, reorder points, and reporting
-* **Customs and compliance** — handling import/export documentation, particularly relevant post-Brexit
+* **Customs and compliance** — handling [import/export documentation](/articles/customs-clearance-uk-step-by-step-guide/), particularly relevant post-Brexit
 
 Some businesses outsource a single function — say, warehousing only. Others hand over the entire order-to-delivery chain. The scope depends on your business model, volumes, and how much control you want to retain.
 
@@ -141,10 +141,10 @@ Can they handle your peak volumes? If your business doubles in the next 18 month
 
 Post-Brexit, this is non-negotiable for any business importing or exporting. Your 3PL should be able to handle:
 
-* Customs declarations via the Customs Declaration Service (CDS)
-* EORI number validation and management
+* Customs declarations via the Customs Declaration Service (CDS) — see our [customs clearance guide](/articles/customs-clearance-uk-step-by-step-guide/) for the full process
+* [EORI number](/articles/eori-number-uk-complete-guide/) validation and management
 * Rules of Origin documentation for preferential tariff rates under the UK-EU Trade and Cooperation Agreement
-* Bonded warehousing if you need to defer duty payments
+* Bonded warehousing if you need to defer [duty payments](/articles/import-duty-uk-complete-guide/)
 * Health and phytosanitary checks for food, plant, or animal products
 
 If your 3PL cannot do this, you will need a separate customs broker — adding cost and complexity.
