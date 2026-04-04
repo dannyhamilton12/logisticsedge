@@ -770,6 +770,72 @@ img {
   max-width: 540px;
 }
 
+/* ==================== Ad Slots ==================== */
+.ad-slot {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.ad-slot__label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.ad-slot__content {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-soft);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+/* Remove placeholder styling when real ads are loaded */
+.ad-slot__content:has(ins),
+.ad-slot__content:has(a) {
+  background: none;
+  border: none;
+  padding: 0;
+  min-height: 0;
+}
+
+.ad-slot--top {
+  margin: 1.5rem auto;
+  max-width: var(--content-width);
+}
+
+.ad-slot--top .ad-slot__content {
+  min-height: 90px;
+}
+
+.ad-slot--mid {
+  margin: 2.5rem 0;
+}
+
+.ad-slot--mid .ad-slot__content {
+  min-height: 250px;
+}
+
+.ad-slot--bottom {
+  margin: 3rem auto;
+  max-width: var(--content-width);
+}
+
+.ad-slot--feed {
+  margin: 0;
+}
+
+.ad-slot--feed .ad-slot__content {
+  min-height: 120px;
+}
+
 /* ==================== Responsive ==================== */
 @media (max-width: 768px) {
   .nav-toggle {

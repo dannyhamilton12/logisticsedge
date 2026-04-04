@@ -1,0 +1,53 @@
+---
+/**
+ * AdSlot — Reusable ad placement component.
+ *
+ * Usage:
+ *   <AdSlot slot="top" />        — Leaderboard above article content
+ *   <AdSlot slot="mid" />        — In-article rectangle
+ *   <AdSlot slot="bottom" />     — After article / before footer
+ *   <AdSlot slot="sidebar" />    — Sidebar sticky (if used)
+ *   <AdSlot slot="feed" />       — Between cards in listing pages
+ *
+ * To activate ads:
+ *   1. Add your AdSense script to BaseLayout.astro <head>
+ *   2. Replace the placeholder <ins> tags below with your ad unit code
+ *   3. Or use the affiliate slot for manual placements
+ */
+
+interface Props {
+  slot: 'top' | 'mid' | 'bottom' | 'sidebar' | 'feed';
+  class?: string;
+}
+
+const { slot, class: className } = Astro.props;
+
+const slotConfig: Record<string, { format: string; label: string }> = {
+  top: { format: 'horizontal', label: 'Advertisement' },
+  mid: { format: 'rectangle', label: 'Advertisement' },
+  bottom: { format: 'horizontal', label: 'Advertisement' },
+  sidebar: { format: 'vertical', label: 'Sponsored' },
+  feed: { format: 'fluid', label: 'Sponsored' },
+};
+
+const config = slotConfig[slot] || slotConfig.mid;
+---
+
+<aside class={`ad-slot ad-slot--${slot} ad-slot--${config.format} ${className || ''}`} aria-label={config.label}>
+  <span class="ad-slot__label">{config.label}</span>
+  <div class="ad-slot__content">
+    <!--
+      GOOGLE ADSENSE: Replace this comment with your ad unit code, e.g.:
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+        data-ad-slot="XXXXXXXXXX"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+      AFFILIATE: Or place a manual affiliate banner/link here.
+    -->
+    <slot />
+  </div>
+</aside>

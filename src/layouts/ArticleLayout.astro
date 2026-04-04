@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
 import { render } from 'astro:content';
 
 interface Props {
@@ -46,13 +47,42 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-GB', {
   </div>
 
   <article class="container container--narrow">
-    <div class="prose">
+    <!-- Top ad: leaderboard above article -->
+    <AdSlot slot="top" />
+
+    <div class="prose" id="article-body">
       <Content />
     </div>
+
+    <!-- Bottom ad: after article content -->
+    <AdSlot slot="bottom" />
 
     <div class="author-box">
       <p>Written by <span class="author-box__name">{author}</span></p>
       <p>Published on LogisticsEdge — UK logistics, customs, and supply chain intelligence.</p>
     </div>
   </article>
+
+  <!-- Mid-article ad injection: inserts ad after 3rd heading -->
+  <script>
+    function injectMidArticleAd() {
+      const article = document.getElementById('article-body');
+      if (!article) return;
+      const headings = article.querySelectorAll('h2, h3');
+      if (headings.length < 3) return;
+
+      const target = headings[2];
+      const ad = document.createElement('aside');
+      ad.className = 'ad-slot ad-slot--mid ad-slot--rectangle';
+      ad.setAttribute('aria-label', 'Advertisement');
+      ad.innerHTML = `
+        <span class="ad-slot__label">Advertisement</span>
+        <div class="ad-slot__content">
+          <!-- MID-ARTICLE AD UNIT: Replace with AdSense or affiliate -->
+        </div>
+      `;
+      target.parentNode?.insertBefore(ad, target);
+    }
+    injectMidArticleAd();
+  </script>
 </BaseLayout>
