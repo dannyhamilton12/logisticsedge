@@ -56,7 +56,7 @@ Duty rates vary significantly by product. The UK Global Tariff (UKGT) schedule c
 
 MFN (Most Favoured Nation) rates apply when no trade agreement preference is claimed. The difference between paying MFN and a preferential rate can be substantial — 12% on a £500,000 textiles shipment is £60,000 in avoidable duty.
 
-To find the exact rate for your goods, use the [UK Trade Tariff service](https://www.trade-tariff.service.gov.uk/). You will need your goods' commodity code. If you are unfamiliar with commodity code classification, read our [guide to UK commodity codes](/guides/uk-commodity-codes-tariff-classification-guide/).
+To find the exact rate for your goods, use the [UK Trade Tariff service](https://www.trade-tariff.service.gov.uk/). You will need your goods' commodity code. If you are unfamiliar with commodity code classification, read our [guide to UK commodity codes](/articles/uk-commodity-codes-tariff-classification-guide/).
 
 ## How to calculate import duty step by step
 
@@ -177,4 +177,4 @@ Import duty is a tariff charged based on the product type and origin. Import VAT
 Yes, in certain circumstances. If you overpaid duty due to a classification error, incorrect valuation, or failure to claim a preference, you can apply to HMRC for a repayment within three years of the original payment. Use form C285.
 
 **How do I find the commodity code for my goods?**
-Use the [UK Trade Tariff service](https://www.trade-tariff.service.gov.uk/) or read our [commodity codes guide](/guides/uk-commodity-codes-tariff-classification-guide/) for step-by-step classification help.
+Use the [UK Trade Tariff service](https://www.trade-tariff.service.gov.uk/) or read our [commodity codes guide](/articles/uk-commodity-codes-tariff-classification-guide/) for step-by-step classification help.

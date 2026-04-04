@@ -42,7 +42,7 @@ The only exemptions are personal goods below duty thresholds and certain diploma
 
 Before submitting your first customs declaration, you need three things in place.
 
-**1. A valid EORI number.** Every business involved in UK imports or exports must hold an Economic Operators Registration and Identification (EORI) number. This is your customs identity — it appears on every declaration and every interaction with HMRC. If you do not have one yet, read our [complete guide to EORI numbers in the UK](/guides/eori-number-uk-complete-guide/) for the step-by-step application process.
+**1. A valid EORI number.** Every business involved in UK imports or exports must hold an Economic Operators Registration and Identification (EORI) number. This is your customs identity — it appears on every declaration and every interaction with HMRC. If you do not have one yet, read our [complete guide to EORI numbers in the UK](/articles/eori-number-uk-complete-guide/) for the step-by-step application process.
 
 **2. Access to the Customs Declaration Service (CDS).** CDS replaced the old CHIEF system and is now the only platform HMRC accepts for customs declarations. You need a Government Gateway account linked to your EORI to access CDS. Most businesses use a customs broker or freight forwarder who submits declarations on their behalf, but you can also submit directly.
 
@@ -162,7 +162,7 @@ HMRC data shows that 74% of import declarations and 92% of export declarations a
 
 A good broker does more than submit declarations — they advise on duty savings through trade agreements, preferential origin rules, and customs procedure codes. For many businesses, the broker fee pays for itself through avoided errors and optimised duty payments.
 
-If you outsource logistics entirely, many [third-party logistics (3PL) providers](/guides/what-is-3pl-definitive-uk-guide/) include customs brokerage as part of their service, handling declarations alongside warehousing and distribution.
+If you outsource logistics entirely, many [third-party logistics (3PL) providers](/articles/what-is-3pl-definitive-uk-guide/) include customs brokerage as part of their service, handling declarations alongside warehousing and distribution.
 
 ## Common customs clearance delays and how to avoid them
 
@@ -198,7 +198,7 @@ The UK customs landscape has shifted significantly since Brexit, and 2025-2026 b
 
 Before your next import, work through this checklist:
 
-- Confirm you have an active [EORI number](/guides/eori-number-uk-complete-guide/) (check via Government Gateway)
+- Confirm you have an active [EORI number](/articles/eori-number-uk-complete-guide/) (check via Government Gateway)
 - Ensure CDS access is set up (either directly or through your customs broker)
 - Classify goods using the correct commodity codes from the UK Trade Tariff
 - Gather all required documents before goods ship

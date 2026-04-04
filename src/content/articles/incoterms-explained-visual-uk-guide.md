@@ -37,9 +37,9 @@ When a contract states "CIF Southampton, Incoterms 2020," both parties know prec
 
 Before Brexit, most UK-EU trade moved without customs declarations or border checks. Incoterm selection mattered less because the administrative burden was lighter.
 
-That changed on 1 January 2021. Every goods movement between the UK and EU now requires full [customs clearance](/guides/customs-clearance-uk/), duties assessment, and documentation. The Incoterm you agree determines:
+That changed on 1 January 2021. Every goods movement between the UK and EU now requires full [customs clearance](/articles/customs-clearance-uk-step-by-step-guide/), duties assessment, and documentation. The Incoterm you agree determines:
 
-- **Who submits the customs declaration** — and therefore who needs a valid [EORI number](/guides/eori-number-uk-complete-guide/)
+- **Who submits the customs declaration** — and therefore who needs a valid [EORI number](/articles/eori-number-uk-complete-guide/)
 - **Who pays import duty and VAT** — a significant cost that catches businesses out when they assume the other party covers it
 - **Who controls the logistics** — and whether you have visibility over transit times, carrier selection, and routing
 - **Who bears the risk** if goods are damaged, delayed, or lost in transit
@@ -119,7 +119,7 @@ UK businesses most frequently use:
 
 **DAP** is increasingly popular for UK imports from the EU post-Brexit. European sellers delivering to UK destinations on DAP terms handle transport but leave the UK buyer responsible for import clearance, duties, and VAT. This suits EU sellers who do not want to register for UK customs obligations.
 
-**DDP** is used when the seller wants full control and the buyer wants a landed cost. It requires the seller (or their agent) to handle UK import clearance — which means they need a UK [EORI number](/guides/eori-number-uk-complete-guide/) and often a fiscal representative for VAT.
+**DDP** is used when the seller wants full control and the buyer wants a landed cost. It requires the seller (or their agent) to handle UK import clearance — which means they need a UK [EORI number](/articles/eori-number-uk-complete-guide/) and often a fiscal representative for VAT.
 
 ## Post-Brexit Considerations
 
@@ -127,7 +127,7 @@ Brexit introduced customs formalities to UK-EU trade that did not exist before. 
 
 **EXW and export clearance.** Under EXW, the buyer is technically responsible for export clearance in the seller's country. For a UK buyer purchasing from a German supplier on EXW terms, this means the UK company must arrange export clearance in Germany — which is impractical without a local agent. Post-Brexit, FCA is almost always a better choice than EXW for UK-EU trade because the seller handles export formalities in their own country.
 
-**DDP and the seller's UK obligations.** If an EU seller delivers to the UK on DDP terms, they must handle UK [customs clearance](/guides/customs-clearance-uk/), pay UK import duty and VAT, and hold a UK EORI number. Many EU sellers are reluctant to take on these obligations. This has pushed much UK-EU trade towards DAP, where the UK buyer handles import formalities.
+**DDP and the seller's UK obligations.** If an EU seller delivers to the UK on DDP terms, they must handle UK [customs clearance](/articles/customs-clearance-uk-step-by-step-guide/), pay UK import duty and VAT, and hold a UK EORI number. Many EU sellers are reluctant to take on these obligations. This has pushed much UK-EU trade towards DAP, where the UK buyer handles import formalities.
 
 **Northern Ireland and the Windsor Framework.** Goods moving between Great Britain and Northern Ireland may be subject to different arrangements under the Windsor Framework. The Incoterm should reflect which party handles the relevant declarations — a point that requires careful attention depending on the goods and their final destination.
 
@@ -191,8 +191,8 @@ When in doubt, FCA for exports and DAP for imports are reliable defaults for mos
 
 ## Further Reading
 
-- [EORI Number UK: The Complete Guide](/guides/eori-number-uk-complete-guide/) — essential for any business handling UK import or export clearance
-- [Customs Clearance UK: The Complete Step-by-Step Guide](/guides/customs-clearance-uk/) — the process that Incoterms determine who is responsible for
+- [EORI Number UK: The Complete Guide](/articles/eori-number-uk-complete-guide/) — essential for any business handling UK import or export clearance
+- [Customs Clearance UK: The Complete Step-by-Step Guide](/articles/customs-clearance-uk-step-by-step-guide/) — the process that Incoterms determine who is responsible for
 - [ICC Incoterms 2020](https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/) — the official ICC publication and reference
 - [GOV.UK: Trade with the EU](https://www.gov.uk/business-uk-eu) — HMRC guidance on post-Brexit customs requirements
 
