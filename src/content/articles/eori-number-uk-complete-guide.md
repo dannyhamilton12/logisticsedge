@@ -5,6 +5,7 @@ pubDate: 2026-04-03
 author: "LogisticsEdge"
 category: "customs"
 tags: ["eori", "eori-number", "customs", "imports", "uk-trade", "gb-eori", "xi-eori", "hmrc"]
+image: "/images/articles/eori-customs.jpg"
 draft: false
 ---
 

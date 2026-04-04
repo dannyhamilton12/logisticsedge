@@ -5,6 +5,7 @@ pubDate: 2026-04-03
 author: "LogisticsEdge"
 category: "customs"
 tags: ["customs-clearance", "imports", "uk-trade", "compliance", "cds", "customs-declaration", "import-duty", "hmrc"]
+image: "/images/articles/customs-clearance-port.jpg"
 draft: false
 ---
 

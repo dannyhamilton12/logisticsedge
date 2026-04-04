@@ -5,6 +5,7 @@ pubDate: 2026-04-03
 author: "LogisticsEdge"
 category: "logistics"
 tags: ["3pl", "third-party-logistics", "logistics", "warehousing", "outsourcing", "fulfilment", "uk-logistics", "supply-chain"]
+image: "/images/articles/3pl-warehouse.jpg"
 draft: false
 ---
 

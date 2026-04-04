@@ -71,7 +71,7 @@ function getCategoryClass(category: string) {
           const readTime = Math.max(1, Math.ceil(wordCount / 220));
           return (
             <article class="card">
-              <div class={`card__image ${getCategoryClass(article.data.category)}`}>
+              <div class={`card__image ${getCategoryClass(article.data.category)}`} style={article.data.image ? `background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5) 100%), url(${article.data.image}); background-size: cover; background-position: center;` : ''}>
                 <span class="card__image-label">{article.data.category}</span>
               </div>
               <div class="card__body">

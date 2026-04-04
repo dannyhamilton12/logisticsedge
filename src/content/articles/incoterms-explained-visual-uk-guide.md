@@ -5,6 +5,7 @@ pubDate: 2026-04-03
 author: "LogisticsEdge"
 category: "trade"
 tags: ["incoterms", "incoterms-2020", "international-trade", "shipping", "uk-trade", "fob", "cif", "dap", "trade-terms"]
+image: "/images/articles/incoterms-shipping.jpg"
 draft: false
 ---
 

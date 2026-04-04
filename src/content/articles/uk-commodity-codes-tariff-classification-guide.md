@@ -5,6 +5,7 @@ pubDate: 2026-04-04
 author: "LogisticsEdge"
 category: "customs"
 tags: ["commodity-codes", "tariff-classification", "customs", "imports", "exports", "uk-trade"]
+image: "/images/articles/commodity-codes-cargo.jpg"
 draft: false
 ---
 
