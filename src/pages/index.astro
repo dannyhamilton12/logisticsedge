@@ -8,24 +8,57 @@ const latestArticles = allArticles
   .slice(0, 6);
 
 const allProducts = await getCollection('products', ({ data }) => !data.draft);
-const featuredProducts = allProducts.slice(0, 3);
+const featuredProducts = allProducts.filter(p => p.data.price !== '0').slice(0, 3);
+
+function getCategoryClass(category: string) {
+  const map: Record<string, string> = {
+    customs: 'card__image--customs',
+    logistics: 'card__image--logistics',
+    trade: 'card__image--trade',
+    'supply-chain': 'card__image--supply-chain',
+    warehousing: 'card__image--warehousing',
+  };
+  return map[category?.toLowerCase()] || 'card__image--default';
+}
 ---
 
 <BaseLayout title="LogisticsEdge">
   <!-- Hero -->
   <section class="hero">
     <div class="hero__inner">
-      <h1 class="hero__title">UK Logistics Intelligence</h1>
+      <span class="hero__badge">UK Logistics &amp; Customs Intelligence</span>
+      <h1 class="hero__title">Expert insight for logistics professionals</h1>
       <p class="hero__subtitle">
-        Practical insight on customs compliance, freight operations, and supply chain strategy
-        for logistics professionals working in and with the UK.
+        Practical guides on customs compliance, freight operations, and supply chain
+        strategy. Built for professionals working in and with the UK.
       </p>
+      <div class="hero__actions">
+        <a href="/articles/" class="btn btn--primary">Browse articles</a>
+        <a href="/products/" class="btn btn--outline">Digital products</a>
+      </div>
+      <div class="hero__stat-strip">
+        <div class="hero__stat">
+          <div class="hero__stat-value">{allArticles.length}</div>
+          <div class="hero__stat-label">In-depth guides</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">{allProducts.length}</div>
+          <div class="hero__stat-label">Digital products</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">Free</div>
+          <div class="hero__stat-label">Lead magnets</div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Latest Articles -->
   <section class="section container">
-    <h2 class="section__heading">Latest Articles</h2>
+    <div class="section__header">
+      <h2 class="section__heading">Latest Articles</h2>
+      <a href="/articles/" class="section__link">View all &rarr;</a>
+    </div>
     {latestArticles.length > 0 ? (
       <div class="card-grid">
         {latestArticles.map((article) => {
@@ -34,54 +67,72 @@ const featuredProducts = allProducts.slice(0, 3);
             month: 'short',
             year: 'numeric',
           });
+          const wordCount = article.body?.split(/\s+/).length ?? 0;
+          const readTime = Math.max(1, Math.ceil(wordCount / 220));
           return (
             <article class="card">
-              <p class="card__category">{article.data.category}</p>
-              <h3 class="card__title">
-                <a href={`/articles/${article.id}/`}>{article.data.title}</a>
-              </h3>
-              <p class="card__description">{article.data.description}</p>
-              <p class="card__meta">{date}</p>
+              <div class={`card__image ${getCategoryClass(article.data.category)}`}>
+                <span class="card__image-label">{article.data.category}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href={`/articles/${article.id}/`}>{article.data.title}</a>
+                </h3>
+                <p class="card__description">{article.data.description.slice(0, 140)}...</p>
+                <p class="card__meta">
+                  <span>{date}</span>
+                  <span class="card__meta-dot"></span>
+                  <span>{readTime} min read</span>
+                </p>
+              </div>
             </article>
           );
         })}
       </div>
     ) : (
-      <p>Articles coming soon. Check back shortly.</p>
+      <p>Articles coming soon.</p>
     )}
   </section>
 
   <!-- Featured Products -->
-  <section class="section container">
-    <h2 class="section__heading">Products &amp; Resources</h2>
-    {featuredProducts.length > 0 ? (
-      <div class="card-grid">
-        {featuredProducts.map((product) => (
-          <article class="card">
-            <p class="card__category">{product.data.type}</p>
-            <h3 class="card__title">
-              <a href={`/products/${product.id}/`}>{product.data.title}</a>
-            </h3>
-            <p class="card__description">{product.data.description}</p>
-            <p class="card__meta">{product.data.price}</p>
-          </article>
-        ))}
+  <section class="section--alt">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__heading">Digital Products</h2>
+        <a href="/products/" class="section__link">View all &rarr;</a>
       </div>
-    ) : (
-      <p>Products and resources launching soon.</p>
-    )}
+      {featuredProducts.length > 0 ? (
+        <div class="card-grid">
+          {featuredProducts.map((product) => (
+            <article class="card card--product">
+              <div class="card__image card__image--default">
+                <span class="card__image-label">{product.data.type}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href={`/products/${product.id}/`}>{product.data.title}</a>
+                </h3>
+                <p class="card__description">{product.data.description.slice(0, 120)}...</p>
+                <p class="card__price">&pound;{product.data.price}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p>Products launching soon.</p>
+      )}
+    </div>
   </section>
 
   <!-- Email CTA -->
-  <section class="container">
+  <section class="container" style="padding: 4rem 1.5rem;">
     <div class="cta-section">
-      <h2 class="cta-section__title">Stay informed</h2>
+      <h2 class="cta-section__title">Stay ahead of the curve</h2>
       <p class="cta-section__text">
         Get practical UK logistics and customs insight delivered to your inbox.
         No fluff, no spam.
       </p>
-      <!-- Replace with your email signup form -->
-      <a href="#" class="btn btn--primary">Subscribe</a>
+      <a href="#" class="btn btn--primary">Subscribe to the newsletter</a>
     </div>
   </section>
 </BaseLayout>

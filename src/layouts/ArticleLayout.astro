@@ -11,7 +11,6 @@ const { Content } = await render(entry);
 
 const { title, description, pubDate, category, tags, author, image } = entry.data;
 
-// Reading time estimate: ~220 words per minute
 const wordCount = entry.body?.split(/\s+/).length ?? 0;
 const readingTime = Math.max(1, Math.ceil(wordCount / 220));
 
@@ -23,33 +22,37 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-GB', {
 ---
 
 <BaseLayout title={title} description={description} image={image}>
-  <article class="container container--narrow">
-    <header class="article-header">
-      <p class="article-header__category">{category}</p>
-      <h1 class="article-header__title">{title}</h1>
-      <div class="article-header__meta">
-        <span>{formattedDate}</span>
-        <span>&middot;</span>
-        <span>{readingTime} min read</span>
-        <span>&middot;</span>
-        <span>{author}</span>
-      </div>
-      {tags && tags.length > 0 && (
-        <div class="article-header__tags">
-          {tags.map((tag: string) => (
-            <span class="tag">{tag}</span>
-          ))}
+  <div class="article-hero">
+    <div class="article-hero__inner">
+      <header class="article-header">
+        <span class="article-header__category">{category}</span>
+        <h1 class="article-header__title">{title}</h1>
+        <div class="article-header__meta">
+          <span>{formattedDate}</span>
+          <span>&middot;</span>
+          <span>{readingTime} min read</span>
+          <span>&middot;</span>
+          <span>{author}</span>
         </div>
-      )}
-    </header>
+        {tags && tags.length > 0 && (
+          <div class="article-header__tags">
+            {tags.map((tag: string) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        )}
+      </header>
+    </div>
+  </div>
 
+  <article class="container container--narrow">
     <div class="prose">
       <Content />
     </div>
 
     <div class="author-box">
       <p>Written by <span class="author-box__name">{author}</span></p>
-      <p>Published on LogisticsEdge &mdash; UK logistics, customs, and supply chain intelligence.</p>
+      <p>Published on LogisticsEdge — UK logistics, customs, and supply chain intelligence.</p>
     </div>
   </article>
 </BaseLayout>

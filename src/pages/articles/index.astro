@@ -6,39 +6,64 @@ const articles = await getCollection('articles', ({ data }) => !data.draft);
 const sortedArticles = articles.sort(
   (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
 );
+
+function getCategoryClass(category: string) {
+  const map: Record<string, string> = {
+    customs: 'card__image--customs',
+    logistics: 'card__image--logistics',
+    trade: 'card__image--trade',
+    'supply-chain': 'card__image--supply-chain',
+    warehousing: 'card__image--warehousing',
+  };
+  return map[category?.toLowerCase()] || 'card__image--default';
+}
 ---
 
 <BaseLayout title="Articles" description="UK logistics, customs, and supply chain articles and analysis.">
-  <div class="container">
-    <header class="page-header">
+  <header class="page-header">
+    <div class="page-header__inner">
       <h1 class="page-header__title">Articles</h1>
       <p class="page-header__description">
         Analysis, guides, and insight on UK logistics, customs compliance, and supply chain operations.
       </p>
-    </header>
+    </div>
+  </header>
 
-    {sortedArticles.length > 0 ? (
-      <div class="card-grid">
-        {sortedArticles.map((article) => {
-          const date = new Date(article.data.pubDate).toLocaleDateString('en-GB', {
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric',
-          });
-          return (
-            <article class="card">
-              <p class="card__category">{article.data.category}</p>
-              <h2 class="card__title">
-                <a href={`/articles/${article.id}/`}>{article.data.title}</a>
-              </h2>
-              <p class="card__description">{article.data.description}</p>
-              <p class="card__meta">{date}</p>
-            </article>
-          );
-        })}
-      </div>
-    ) : (
-      <p>No articles published yet. Check back soon.</p>
-    )}
+  <div class="container">
+    <section class="section">
+      {sortedArticles.length > 0 ? (
+        <div class="card-grid">
+          {sortedArticles.map((article) => {
+            const date = new Date(article.data.pubDate).toLocaleDateString('en-GB', {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric',
+            });
+            const wordCount = article.body?.split(/\s+/).length ?? 0;
+            const readTime = Math.max(1, Math.ceil(wordCount / 220));
+            return (
+              <article class="card">
+                <div class={`card__image ${getCategoryClass(article.data.category)}`}>
+                  <span class="card__image-label">{article.data.category}</span>
+                </div>
+                <div class="card__body">
+                  <h2 class="card__title">
+                    <a href={`/articles/${article.id}/`}>{article.data.title}</a>
+                  </h2>
+                  <p class="card__description">{article.data.description.slice(0, 140)}...</p>
+                  <p class="card__meta">
+                    <span>{date}</span>
+                    <span class="card__meta-dot"></span>
+                    <span>{readTime} min read</span>
+                  </p>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      ) : (
+        <p>No articles published yet. Check back soon.</p>
+      )}
+    </section>
   </div>
 </BaseLayout>

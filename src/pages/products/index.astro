@@ -3,32 +3,63 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 const products = await getCollection('products', ({ data }) => !data.draft);
+const paid = products.filter(p => p.data.price !== '0');
+const free = products.filter(p => p.data.price === '0');
 ---
 
 <BaseLayout title="Products" description="Toolkits, guides, and templates for UK logistics and customs professionals.">
-  <div class="container">
-    <header class="page-header">
+  <header class="page-header">
+    <div class="page-header__inner">
       <h1 class="page-header__title">Products &amp; Resources</h1>
       <p class="page-header__description">
         Practical toolkits, templates, and guides built for UK logistics and customs professionals.
       </p>
-    </header>
+    </div>
+  </header>
 
-    {products.length > 0 ? (
-      <div class="card-grid">
-        {products.map((product) => (
-          <article class="card">
-            <p class="card__category">{product.data.type}</p>
-            <h2 class="card__title">
-              <a href={`/products/${product.id}/`}>{product.data.title}</a>
-            </h2>
-            <p class="card__description">{product.data.description}</p>
-            <p class="card__meta">{product.data.price}</p>
-          </article>
-        ))}
-      </div>
-    ) : (
-      <p>Products launching soon. Subscribe to be notified.</p>
+  <div class="container">
+    {paid.length > 0 && (
+      <section class="section">
+        <h2 class="section__heading">Premium Toolkits</h2>
+        <div class="card-grid">
+          {paid.map((product) => (
+            <article class="card card--product">
+              <div class="card__image card__image--customs">
+                <span class="card__image-label">{product.data.type}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href={`/products/${product.id}/`}>{product.data.title}</a>
+                </h3>
+                <p class="card__description">{product.data.description.slice(0, 120)}...</p>
+                <p class="card__price">&pound;{product.data.price}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {free.length > 0 && (
+      <section class="section">
+        <h2 class="section__heading">Free Resources</h2>
+        <div class="card-grid">
+          {free.map((product) => (
+            <article class="card card--product">
+              <div class="card__image card__image--supply-chain">
+                <span class="card__image-label">Free</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href={`/products/${product.id}/`}>{product.data.title}</a>
+                </h3>
+                <p class="card__description">{product.data.description.slice(0, 120)}...</p>
+                <p class="card__price card__price--free">Free</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
     )}
   </div>
 </BaseLayout>
