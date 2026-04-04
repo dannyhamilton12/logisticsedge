@@ -1,8 +1,9 @@
 ---
 title: "UK Warehouse Management Excellence Checklist"
-description: "Free comprehensive checklist covering UK warehouse operations, health & safety compliance, inventory management, and efficiency optimization for logistics managers."
+description: "Free checklist for UK warehouse operations, health & safety compliance, inventory management, and efficiency optimization for logistics managers."
 price: "0"
 type: "guide"
+category: "logistics"
 tags: ["warehouse-management", "logistics", "inventory", "health-safety", "compliance", "operational-efficiency", "free-download", "uk-operations"]
 leadMagnet: "free"
 draft: false

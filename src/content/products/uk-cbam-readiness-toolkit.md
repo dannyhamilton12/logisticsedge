@@ -1,8 +1,9 @@
 ---
 title: "UK CBAM Readiness Toolkit"
-description: "Practical toolkit for UK importers preparing for the Carbon Border Adjustment Mechanism (CBAM) launching January 2027. Covers registration, reporting, and costs."
+description: "Practical toolkit for UK importers preparing for the Carbon Border Adjustment Mechanism (CBAM) launching January 2027. Registration guide."
 price: "29.99"
 type: "toolkit"
+category: "sustainability"
 tags: ["cbam", "carbon-border-adjustment", "carbon", "compliance", "sustainability", "uk-ets", "import-tax", "hmrc"]
 draft: false
 ---

@@ -3,6 +3,7 @@ title: "Top 10 UK Import Mistakes That Cost You Money"
 description: "Free checklist covering the 10 most common UK import errors that cause customs penalties, overpaid duty, and port delays — with practical steps to fix each one."
 price: "0"
 type: "guide"
+category: "customs"
 tags: ["customs", "imports", "compliance", "import-errors", "customs-penalties", "duty", "free-download", "uk-imports"]
 leadMagnet: "free"
 draft: false

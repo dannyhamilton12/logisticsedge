@@ -1,10 +1,10 @@
 ---
-title: "UK Customs Duty on Electronics: Rates, Exemptions & Money-Saving Tips"
-description: "Complete guide to UK customs duty on electronics imports including smartphones, laptops, tablets and gaming consoles. Current rates, exemptions and how to minimise costs."
+title: "UK Customs Duty on Electronics: Rates & Exemptions"
+description: "UK customs duty guide for electronics imports. Smartphones, laptops, tablets, gaming consoles. Current rates, exemptions and cost-saving tips."
 pubDate: 2026-04-04
 author: "LogisticsEdge"
 category: "customs"
-tags: ["customs-duty", "electronics", "import-tax", "consumer-goods"]
+tags: ["customs-duty", "electronics", "import-tax", "consumer-goods", "uk-trade", "import-rates", "duty-relief", "trade-agreements"]
 image: "/images/articles/uk-customs-duty-on-electronics.jpg"
 draft: false
 ---

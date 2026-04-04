@@ -1,6 +1,6 @@
 ---
 title: "UK Commodity Codes: How to Classify Your Goods for Customs"
-description: "Every product imported to or exported from the UK needs a commodity code. This guide explains how the UK tariff classification system works, how to find the right code, and how to avoid costly misclassification errors."
+description: "Complete guide to UK commodity codes and tariff classification. Find the right code for imports/exports and avoid costly misclassification errors."
 pubDate: 2026-04-04
 author: "LogisticsEdge"
 category: "customs"

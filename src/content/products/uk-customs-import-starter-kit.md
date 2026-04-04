@@ -3,6 +3,7 @@ title: "UK Customs & Import Compliance Starter Kit"
 description: "Complete UK import compliance toolkit covering CDS declarations, commodity codes, duty calculation, and customs procedures for importers and brokers."
 price: "24.99"
 type: "toolkit"
+category: "customs"
 tags: ["customs", "imports", "compliance", "starter-kit", "cds", "duty-calculation", "commodity-codes", "customs-broker"]
 draft: false
 ---
