@@ -1,10 +1,10 @@
 ---
 title: "UK Import Duty Calculator & Reference Guide"
 description: "Comprehensive duty calculation reference for UK importers. Covers commodity codes, duty rates, trade agreements, and worked examples."
-price: "39"
+price: "39.99"
 type: "guide"
 category: "customs"
-tags: ["customs", "duty-calculation", "commodity-codes", "imports", "trade-agreements", "tariff", "rules-of-origin", "compliance"]
+tags: ["customs", "duty-calculation", "commodity-codes", "imports", "trade-agreements", "tariff", "rules-of-origin", "compliance", "brexit", "calculator", "reference-guide", "uk-customs"]
 draft: false
 ---
 
