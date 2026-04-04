@@ -1,6 +1,6 @@
 ---
 title: "UK Import Duty Calculator (Interactive Tool)"
-description: "Interactive Excel calculator for UK import duties, VAT, and total costs. Includes commodity code lookup, country-specific rates, threshold calculations, and compliance checklist."
+description: "Interactive Excel calculator for UK import duties, VAT and total costs. Includes commodity code lookup, country rates, and compliance checklist."
 price: "39.00"
 type: "toolkit"
 category: "customs"

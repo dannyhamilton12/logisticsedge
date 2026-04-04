@@ -1,6 +1,6 @@
 ---
 title: "Supply Chain Risk Assessment Template"
-description: "Free comprehensive risk assessment template for UK supply chain managers. Covers Brexit risks, supplier assessment, contingency planning, and operational resilience."
+description: "Free supply chain risk assessment template for UK managers. Covers Brexit risks, supplier assessment, contingency planning, and operational resilience."
 price: "0"
 type: "template"
 category: "supply-chain"

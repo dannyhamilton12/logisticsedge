@@ -1,8 +1,9 @@
 ---
 title: "Incoterms 2020 Quick Reference Guide"
-description: "Free downloadable reference card covering all 11 Incoterms 2020 with responsibilities, risks, and practical UK examples. Perfect desk reference for logistics professionals."
+description: "Free Incoterms 2020 reference card covering all 11 trade terms with responsibilities, risks, and UK examples for logistics professionals."
 price: "0"
 type: "guide"
+category: "trade"
 tags: ["incoterms", "trade-terms", "shipping", "reference", "beginner-friendly"]
 leadMagnet: "free"
 draft: false
