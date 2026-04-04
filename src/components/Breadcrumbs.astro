@@ -1,0 +1,52 @@
+---
+/**
+ * Breadcrumbs — Shows navigation trail with JSON-LD structured data.
+ * Usage: <Breadcrumbs items={[{ label: "Articles", href: "/articles/" }, { label: "Article Title" }]} />
+ */
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  items: BreadcrumbItem[];
+}
+
+const { items } = Astro.props;
+
+const breadcrumbList = [
+  { label: 'Home', href: '/' },
+  ...items,
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbList.map((item, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.label,
+    ...(item.href ? { item: new URL(item.href, 'https://logisticsedge.co.uk').href } : {}),
+  })),
+};
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol class="breadcrumbs__list">
+    {breadcrumbList.map((item, i) => (
+      <li class="breadcrumbs__item">
+        {item.href && i < breadcrumbList.length - 1 ? (
+          <a href={item.href} class="breadcrumbs__link">{item.label}</a>
+        ) : (
+          <span class="breadcrumbs__current" aria-current="page">{item.label}</span>
+        )}
+        {i < breadcrumbList.length - 1 && (
+          <span class="breadcrumbs__sep" aria-hidden="true">/</span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

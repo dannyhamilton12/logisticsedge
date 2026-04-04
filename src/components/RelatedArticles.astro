@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentId: string;
+  category: string;
+  tags: string[];
+}
+
+const { currentId, category, tags } = Astro.props;
+
+const allArticles = await getCollection('articles', ({ data }) => !data.draft);
+
+// Score articles by relevance: same category = 3 points, each shared tag = 1 point
+const scored = allArticles
+  .filter(a => a.id !== currentId)
+  .map(a => {
+    let score = 0;
+    if (a.data.category === category) score += 3;
+    if (tags && a.data.tags) {
+      score += a.data.tags.filter((t: string) => tags.includes(t)).length;
+    }
+    return { article: a, score };
+  })
+  .filter(s => s.score > 0)
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 3);
+---
+
+{scored.length > 0 && (
+  <aside class="related-articles" aria-label="Related articles">
+    <h2 class="related-articles__title">Related Articles</h2>
+    <div class="related-articles__grid">
+      {scored.map(({ article }) => {
+        const date = new Date(article.data.pubDate).toLocaleDateString('en-GB', {
+          day: 'numeric', month: 'short', year: 'numeric'
+        });
+        return (
+          <a href={`/articles/${article.id}/`} class="related-card">
+            <span class="related-card__category">{article.data.category}</span>
+            <h3 class="related-card__title">{article.data.title}</h3>
+            <span class="related-card__date">{date}</span>
+          </a>
+        );
+      })}
+    </div>
+  </aside>
+)}

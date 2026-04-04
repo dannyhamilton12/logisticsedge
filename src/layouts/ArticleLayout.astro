@@ -1,6 +1,9 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import AdSlot from '../components/AdSlot.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
 import { render } from 'astro:content';
 
 interface Props {
@@ -20,11 +23,69 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-GB', {
   month: 'long',
   year: 'numeric',
 });
+
+const isoDate = new Date(pubDate).toISOString();
+const canonicalURL = new URL(`/articles/${entry.id}/`, 'https://logisticsedge.co.uk').href;
+
+// Extract FAQ items from the article body for FAQ schema
+const faqRegex = /\*\*(.+?\?)\*\*\n(.+?)(?=\n\n|\n\*\*|$)/gs;
+const faqItems: { question: string; answer: string }[] = [];
+if (entry.body) {
+  let match;
+  while ((match = faqRegex.exec(entry.body)) !== null) {
+    faqItems.push({ question: match[1].trim(), answer: match[2].trim() });
+  }
+}
+
+// Article structured data (JSON-LD)
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  datePublished: isoDate,
+  dateModified: entry.data.updatedDate ? new Date(entry.data.updatedDate).toISOString() : isoDate,
+  author: {
+    '@type': 'Organization',
+    name: author || 'LogisticsEdge',
+    url: 'https://logisticsedge.co.uk',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'LogisticsEdge',
+    url: 'https://logisticsedge.co.uk',
+  },
+  mainEntityOfPage: canonicalURL,
+  ...(image ? { image: new URL(image, 'https://logisticsedge.co.uk').href } : {}),
+  wordCount: wordCount,
+};
+
+// FAQ structured data (only if FAQ items found)
+const faqSchema = faqItems.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.slice(0, 10).map(faq => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+} : null;
 ---
 
 <BaseLayout title={title} description={description} image={image}>
+  <!-- Article Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+
   <div class="article-hero">
     <div class="article-hero__inner">
+      <Breadcrumbs items={[
+        { label: 'Articles', href: '/articles/' },
+        { label: title }
+      ]} />
       <header class="article-header">
         <span class="article-header__category">{category}</span>
         <h1 class="article-header__title">{title}</h1>
@@ -50,12 +111,18 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-GB', {
     <!-- Top ad: leaderboard above article -->
     <AdSlot slot="top" />
 
+    <!-- Table of Contents -->
+    <TableOfContents />
+
     <div class="prose" id="article-body">
       <Content />
     </div>
 
     <!-- Bottom ad: after article content -->
     <AdSlot slot="bottom" />
+
+    <!-- Related Articles -->
+    <RelatedArticles currentId={entry.id} category={category} tags={tags || []} />
 
     <div class="author-box">
       <p>Written by <span class="author-box__name">{author}</span></p>
@@ -84,5 +151,14 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-GB', {
       target.parentNode?.insertBefore(ad, target);
     }
     injectMidArticleAd();
+  </script>
+
+  <!-- Lazy load images -->
+  <script>
+    document.querySelectorAll('.prose img').forEach(img => {
+      img.setAttribute('loading', 'lazy');
+      if (!img.getAttribute('width')) img.setAttribute('width', '800');
+      if (!img.getAttribute('height')) img.setAttribute('height', '400');
+    });
   </script>
 </BaseLayout>

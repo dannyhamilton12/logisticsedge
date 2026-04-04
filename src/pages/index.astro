@@ -132,7 +132,28 @@ function getCategoryClass(category: string) {
         Get practical UK logistics and customs insight delivered to your inbox.
         No fluff, no spam.
       </p>
-      <a href="#" class="btn btn--primary">Subscribe to the newsletter</a>
+      <!-- NEWSLETTER: Update the form action with your Buttondown username -->
+      <!-- Sign up free at https://buttondown.com — or swap for Mailchimp/ConvertKit -->
+      <form
+        action="https://buttondown.com/api/emails/newsletter-subscribe"
+        method="post"
+        class="newsletter-form"
+        target="_blank"
+      >
+        <input type="hidden" name="tag" value="logisticsedge" />
+        <div class="newsletter-form__row">
+          <input
+            type="email"
+            name="email"
+            placeholder="you@company.com"
+            required
+            class="newsletter-form__input"
+            aria-label="Email address"
+          />
+          <button type="submit" class="btn btn--primary newsletter-form__btn">Subscribe</button>
+        </div>
+        <p class="newsletter-form__hint">Free. Unsubscribe anytime. No spam.</p>
+      </form>
     </div>
   </section>
 </BaseLayout>

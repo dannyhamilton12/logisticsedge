@@ -162,6 +162,8 @@ The 3PL pricing model should be clear. Common charges include:
 
 Watch for hidden charges: system integration fees, onboarding charges, labelling surcharges, or penalty fees for "non-standard" pallets. Get a fully itemised quote based on realistic volume projections.
 
+For detailed pricing information across different service levels and volumes, see our complete [3PL costs breakdown](/articles/3pl-costs-uk/).
+
 ## What Does 3PL Cost in the UK?
 
 Costs vary significantly by location, service level, and volume. As a rough guide for 2026:

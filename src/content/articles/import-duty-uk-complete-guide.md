@@ -45,7 +45,7 @@ Duty rates vary significantly by product. The UK Global Tariff (UKGT) schedule c
 
 | Product Category | Typical MFN Rate | With EU-UK TCA |
 |---|---|---|
-| Electronics and consumer technology | 0–4.7% | 0% |
+| [Electronics and consumer technology](/articles/uk-customs-duty-on-electronics/) | 0–4.7% | 0% |
 | Clothing and textiles | 6.5–12% | 0% |
 | Footwear | 3.5–17% | 0% |
 | Food and agricultural products | 0–50%+ | 0% (if origin rules met) |
@@ -178,3 +178,9 @@ Yes, in certain circumstances. If you overpaid duty due to a classification erro
 
 **How do I find the commodity code for my goods?**
 Use the [UK Trade Tariff service](https://www.trade-tariff.service.gov.uk/) or read our [commodity codes guide](/articles/uk-commodity-codes-tariff-classification-guide/) for step-by-step classification help.
+
+---
+
+## Need Help with Duty Calculations?
+
+For detailed calculations, worked examples, and rate tables covering all common product categories, see our [UK Import Duty Calculator Reference Guide](/products/uk-import-duty-calculator-reference-guide/) — a comprehensive toolkit for importers and customs professionals.
