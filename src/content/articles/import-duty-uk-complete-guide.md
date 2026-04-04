@@ -46,7 +46,7 @@ Duty rates vary significantly by product. The UK Global Tariff (UKGT) schedule c
 | Product Category | Typical MFN Rate | With EU-UK TCA |
 |---|---|---|
 | [Electronics and consumer technology](/articles/uk-customs-duty-on-electronics/) | 0–4.7% | 0% |
-| Clothing and textiles | 6.5–12% | 0% |
+| [Clothing and textiles](/articles/uk-import-duty-on-clothing/) | 6.5–12% | 0% |
 | Footwear | 3.5–17% | 0% |
 | Food and agricultural products | 0–50%+ | 0% (if origin rules met) |
 | Machinery and industrial equipment | 0–6.5% | 0% |
