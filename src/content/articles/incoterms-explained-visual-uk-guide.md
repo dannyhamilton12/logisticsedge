@@ -1,10 +1,10 @@
 ---
 title: "Incoterms Explained: A Visual Guide for UK Traders"
-description: "Incoterms are 11 standardised trade terms that define who pays for what and who bears the risk when goods move between buyer and seller. This guide explains all 11 Incoterms 2020 rules with comparison tables, UK-specific guidance, and post-Brexit considerations."
+description: "All 11 Incoterms 2020 rules explained with comparison tables, cost and risk breakdowns, UK-specific guidance, and post-Brexit considerations for traders."
 pubDate: 2026-04-03
 author: "LogisticsEdge"
 category: "trade"
-tags: ["incoterms", "international-trade", "shipping", "uk-trade"]
+tags: ["incoterms", "incoterms-2020", "international-trade", "shipping", "uk-trade", "fob", "cif", "dap", "trade-terms"]
 draft: false
 ---
 

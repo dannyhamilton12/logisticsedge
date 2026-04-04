@@ -1,10 +1,10 @@
 ---
 title: "EORI Number UK: The Complete Guide"
-description: "Every UK business importing or exporting goods needs an EORI number. This guide covers what an EORI number is, who needs one, the difference between GB and XI EORI numbers, how to apply step by step, and the common mistakes that cause customs delays."
+description: "Learn what a UK EORI number is, who needs one, the difference between GB and XI EORI, how to apply step by step, and common mistakes that cause customs delays."
 pubDate: 2026-04-03
 author: "LogisticsEdge"
 category: "customs"
-tags: ["eori", "customs", "imports", "uk-trade"]
+tags: ["eori", "eori-number", "customs", "imports", "uk-trade", "gb-eori", "xi-eori", "hmrc"]
 draft: false
 ---
 

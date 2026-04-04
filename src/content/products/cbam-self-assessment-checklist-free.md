@@ -1,9 +1,9 @@
 ---
-title: "CBAM Self-Assessment Checklist"
-description: "A free self-assessment checklist to find out if your supply chain is exposed to the UK Carbon Border Adjustment Mechanism — in under 5 minutes."
+title: "Free UK CBAM Self-Assessment Checklist"
+description: "Free checklist to assess your UK CBAM exposure in under 5 minutes. Find out if your imports of steel, aluminium, cement, or fertilisers are affected by 2027."
 price: "0"
 type: "guide"
-tags: ["cbam", "carbon", "compliance", "sustainability"]
+tags: ["cbam", "carbon-border-adjustment", "carbon", "compliance", "sustainability", "self-assessment", "free-download", "carbon-tax"]
 leadMagnet: "free"
 draft: false
 ---

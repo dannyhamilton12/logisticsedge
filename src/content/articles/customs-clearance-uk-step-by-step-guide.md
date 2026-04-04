@@ -1,10 +1,10 @@
 ---
 title: "Customs Clearance UK: The Complete Step-by-Step Guide"
-description: "Every commercial shipment entering or leaving the UK must go through customs clearance. This guide walks through the entire process step by step, covering required documents, costs, common mistakes, and 2025-2026 regulatory changes."
+description: "Step-by-step guide to UK customs clearance covering CDS declarations, required documents, costs, common mistakes, and 2025-2026 regulatory changes."
 pubDate: 2026-04-03
 author: "LogisticsEdge"
 category: "customs"
-tags: ["customs-clearance", "imports", "uk-trade", "compliance"]
+tags: ["customs-clearance", "imports", "uk-trade", "compliance", "cds", "customs-declaration", "import-duty", "hmrc"]
 draft: false
 ---
 

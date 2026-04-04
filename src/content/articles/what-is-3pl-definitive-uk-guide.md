@@ -1,10 +1,10 @@
 ---
 title: "What Is 3PL? The Definitive UK Guide"
-description: "Third-party logistics (3PL) means outsourcing warehousing, fulfilment, transport, or your entire supply chain to a specialist provider. This guide covers how 3PL works, types of provider, costs, and how to choose the right partner for your UK business."
+description: "What is 3PL? Learn how third-party logistics works in the UK, types of provider, typical costs, and how to choose the right 3PL partner for your business."
 pubDate: 2026-04-03
 author: "LogisticsEdge"
 category: "logistics"
-tags: ["3pl", "logistics", "warehousing", "outsourcing"]
+tags: ["3pl", "third-party-logistics", "logistics", "warehousing", "outsourcing", "fulfilment", "uk-logistics", "supply-chain"]
 draft: false
 ---
 
