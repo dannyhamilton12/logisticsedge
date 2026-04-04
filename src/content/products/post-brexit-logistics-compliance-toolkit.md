@@ -3,7 +3,8 @@ title: "Post-Brexit UK Logistics Compliance Toolkit"
 description: "Comprehensive toolkit covering post-Brexit regulatory compliance for UK logistics operations. Includes supply chain mapping, vendor compliance, driver regulations, transport licensing, and operational procedures."
 price: "49.99"
 type: "toolkit"
-tags: ["brexit", "logistics", "compliance", "supply-chain", "transport", "licensing", "regulations", "operations", "uk-logistics"]
+category: "logistics"
+tags: ["brexit", "logistics", "compliance", "supply-chain", "transport", "licensing", "regulations", "operations", "uk-logistics", "customs", "permits", "risk-management"]
 draft: false
 ---
 
