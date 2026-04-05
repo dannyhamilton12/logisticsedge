@@ -1,10 +1,10 @@
 ---
-title: "Customs Clearance UK: The Complete Step-by-Step Guide"
-description: "Step-by-step guide to UK customs clearance covering CDS declarations, required documents, costs, common mistakes, and 2025-2026 regulatory changes."
+title: "UK Customs Clearance 2026: Complete Step-by-Step Guide"
+description: "Master UK customs clearance with our 2026 guide covering CDS declarations, Brexit changes, costs, and common mistakes. Save time and avoid delays."
 pubDate: 2026-04-03
 author: "LogisticsEdge"
 category: "customs"
-tags: ["customs-clearance", "imports", "uk-trade", "compliance", "cds", "customs-declaration", "import-duty", "hmrc"]
+tags: ["customs-clearance", "imports", "uk-trade", "compliance", "cds", "customs-declaration", "import-duty", "hmrc", "customs-clearance-2026", "post-brexit-customs", "uk-imports-guide"]
 image: "/images/articles/customs-clearance-port.jpg"
 draft: false
 ---
