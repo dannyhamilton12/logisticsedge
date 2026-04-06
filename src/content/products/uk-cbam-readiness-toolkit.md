@@ -1,20 +1,38 @@
 ---
 title: "UK CBAM Readiness Toolkit"
-description: "Practical toolkit for UK importers preparing for the Carbon Border Adjustment Mechanism (CBAM) launching January 2027. Registration guide."
+description: "Prepare for UK CBAM before January 2027. Includes exposure assessment spreadsheet, supplier data request template, cost impact calculator, and 15-chapter compliance guide."
 price: "29.99"
 type: "toolkit"
-category: "sustainability"
 tags: ["cbam", "carbon-border-adjustment", "carbon", "compliance", "sustainability", "uk-ets", "import-tax", "hmrc"]
 draft: false
 ---
 
-## A Practical Guide for Importers, Supply Chain Managers and Customs Professionals
+## Get CBAM-Ready Before Your Competitors
 
-*Version 1.0 — April 2026*
+*UK CBAM launches January 2027. Most importers of steel, aluminium, cement, fertilisers, and hydrogen are not prepared. This toolkit gets you from zero to compliant.*
 
-***
+---
 
-## Contents
+## What You Get
+
+### 1. CBAM Exposure Assessment (Google Sheets)
+Enter your import data and instantly see which product lines are in scope, estimated CBAM charges per line, and total annual exposure. Built on the latest UK ETS carbon price data.
+
+### 2. Supplier Emissions Data Request Template (Word)
+A ready-to-send letter requesting actual emissions data from your overseas suppliers. Covers direct emissions, production methods, and verification requirements. Based on the HMRC reporting framework.
+
+### 3. CBAM Cost Impact Calculator (Google Sheets)
+Model the financial impact of CBAM on your product margins. Scenario planning for different carbon prices (£50, £75, £100/tonne). Shows per-unit cost uplift by product line.
+
+### 4. Registration & Reporting Checklist (PDF)
+Step-by-step checklist for HMRC registration, quarterly reporting obligations, and payment deadlines. Includes the key dates you cannot miss.
+
+### 5. Compliance Guide (PDF, 15 chapters)
+The full reference covering everything below — from what CBAM is to how the charge is calculated, sector-specific guidance, and penalty structures.
+
+---
+
+## Guide Contents
 
 1. What is the UK CBAM?
 2. UK CBAM vs EU CBAM: Key Differences

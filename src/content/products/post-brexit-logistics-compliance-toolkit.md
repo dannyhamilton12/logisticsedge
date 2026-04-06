@@ -5,7 +5,7 @@ price: "49.99"
 type: "toolkit"
 category: "logistics"
 tags: ["brexit", "logistics", "compliance", "supply-chain", "transport", "licensing", "regulations", "operations", "uk-logistics", "customs", "permits", "risk-management"]
-draft: false
+draft: true
 ---
 
 ## The Complete Post-Brexit Compliance Guide for Logistics Professionals

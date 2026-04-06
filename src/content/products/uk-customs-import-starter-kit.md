@@ -5,7 +5,7 @@ price: "24.99"
 type: "toolkit"
 category: "customs"
 tags: ["customs", "imports", "compliance", "starter-kit", "cds", "duty-calculation", "commodity-codes", "customs-broker", "uk-import-kit-2026", "customs-compliance-template", "import-duty-calculator"]
-draft: false
+draft: true
 ---
 
 ## A Practical Guide for Importers, Freight Forwarders and Customs Brokers

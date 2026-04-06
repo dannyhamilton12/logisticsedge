@@ -8,7 +8,10 @@ const latestArticles = allArticles
   .slice(0, 6);
 
 const allProducts = await getCollection('products', ({ data }) => !data.draft);
-const featuredProducts = allProducts.filter(p => p.data.price !== '0').slice(0, 3);
+const featuredProducts = allProducts
+  .filter(p => p.data.price !== '0')
+  .sort((a, b) => parseFloat(a.data.price) - parseFloat(b.data.price))
+  .slice(0, 3);
 
 function getCategoryClass(category: string) {
   const map: Record<string, string> = {

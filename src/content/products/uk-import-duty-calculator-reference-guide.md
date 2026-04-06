@@ -5,7 +5,7 @@ price: "39.99"
 type: "guide"
 category: "customs"
 tags: ["customs", "duty-calculation", "commodity-codes", "imports", "trade-agreements", "tariff", "rules-of-origin", "compliance", "brexit", "calculator", "reference-guide", "uk-customs"]
-draft: false
+draft: true
 ---
 
 ## The Complete Reference for UK Import Duty Calculation
