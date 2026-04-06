@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import CookieConsent from '../components/CookieConsent.astro';
 
 interface Props {
   title: string;
@@ -14,8 +15,9 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImage = image ? new URL(image, Astro.site).href : undefined;
+const ogImage = image ? new URL(image, Astro.site).href : new URL('/og-default.png', Astro.site).href;
 const fullTitle = title === 'LogisticsEdge' ? title : `${title} | LogisticsEdge`;
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -34,13 +36,13 @@ const fullTitle = title === 'LogisticsEdge' ? title : `${title} | LogisticsEdge`
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
-    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta property="og:image" content={ogImage} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
-    {ogImage && <meta name="twitter:image" content={ogImage} />}
+    <meta name="twitter:image" content={ogImage} />
 
     <link rel="alternate" type="application/rss+xml" title="LogisticsEdge" href="/rss.xml" />
 
@@ -66,10 +68,10 @@ const fullTitle = title === 'LogisticsEdge' ? title : `${title} | LogisticsEdge`
         <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">&#9776;</button>
         <nav>
           <ul class="site-nav" id="site-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/articles/">Articles</a></li>
-            <li><a href="/products/">Products</a></li>
-            <li><a href="/about/">About</a></li>
+            <li><a href="/" class={currentPath === '/' ? 'is-active' : ''}>Home</a></li>
+            <li><a href="/articles/" class={currentPath.startsWith('/articles') ? 'is-active' : ''}>Articles</a></li>
+            <li><a href="/products/" class={currentPath.startsWith('/products') ? 'is-active' : ''}>Products</a></li>
+            <li><a href="/about/" class={currentPath.startsWith('/about') ? 'is-active' : ''}>About</a></li>
           </ul>
         </nav>
       </div>
@@ -81,10 +83,41 @@ const fullTitle = title === 'LogisticsEdge' ? title : `${title} | LogisticsEdge`
 
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <p>&copy; {new Date().getFullYear()} LogisticsEdge. All rights reserved.</p>
-        <p class="site-footer__tagline">LogisticsEdge &mdash; UK Logistics Intelligence</p>
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <a href="/" class="site-footer__logo">Logistics<span>Edge</span></a>
+            <p class="site-footer__tagline">UK logistics, customs, and supply chain intelligence.</p>
+          </div>
+          <div class="site-footer__links">
+            <div class="site-footer__col">
+              <h4 class="site-footer__heading">Content</h4>
+              <ul>
+                <li><a href="/articles/">All articles</a></li>
+                <li><a href="/articles/category/customs/">Customs</a></li>
+                <li><a href="/articles/category/logistics/">Logistics</a></li>
+                <li><a href="/articles/category/trade/">Trade</a></li>
+                <li><a href="/articles/category/supply-chain/">Supply Chain</a></li>
+                <li><a href="/articles/category/warehousing/">Warehousing</a></li>
+              </ul>
+            </div>
+            <div class="site-footer__col">
+              <h4 class="site-footer__heading">Site</h4>
+              <ul>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/products/">Products</a></li>
+                <li><a href="/privacy/">Privacy Policy</a></li>
+                <li><a href="/rss.xml">RSS Feed</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p>&copy; {new Date().getFullYear()} LogisticsEdge. All rights reserved.</p>
+        </div>
       </div>
     </footer>
+
+    <CookieConsent />
 
     <script>
       document.getElementById('nav-toggle')?.addEventListener('click', () => {

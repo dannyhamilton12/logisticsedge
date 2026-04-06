@@ -7,6 +7,16 @@ const sortedArticles = articles.sort(
   (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
 );
 
+const categories = [...new Set(articles.map(a => a.data.category))].sort();
+const categoryLabels: Record<string, string> = {
+  customs: 'Customs',
+  logistics: 'Logistics',
+  trade: 'Trade',
+  'supply-chain': 'Supply Chain',
+  warehousing: 'Warehousing',
+  compliance: 'Compliance',
+};
+
 function getCategoryClass(category: string) {
   const map: Record<string, string> = {
     customs: 'card__image--customs',
@@ -31,6 +41,12 @@ function getCategoryClass(category: string) {
 
   <div class="container">
     <section class="section">
+      <div class="category-filters">
+        <a href="/articles/" class="category-filter is-active">All</a>
+        {categories.map(cat => (
+          <a href={`/articles/category/${cat}/`} class="category-filter">{categoryLabels[cat] || cat}</a>
+        ))}
+      </div>
       {sortedArticles.length > 0 ? (
         <div class="card-grid">
           {sortedArticles.map((article) => {

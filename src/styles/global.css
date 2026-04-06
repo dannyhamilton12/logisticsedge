@@ -129,10 +129,16 @@ img {
   transition: all 0.15s;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a.is-active {
   color: #fff;
   background: rgba(255, 255, 255, 0.08);
   text-decoration: none;
+}
+
+.site-nav a.is-active {
+  background: rgba(255, 255, 255, 0.12);
+  border-bottom: 2px solid var(--color-accent);
 }
 
 .nav-toggle {
@@ -149,7 +155,7 @@ img {
 .site-footer {
   background: var(--color-navy);
   color: rgba(255, 255, 255, 0.5);
-  padding: 3rem 1.5rem;
+  padding: 3rem 1.5rem 2rem;
   margin-top: 0;
   font-size: 0.875rem;
 }
@@ -157,13 +163,84 @@ img {
 .site-footer__inner {
   max-width: var(--max-width);
   margin: 0 auto;
+}
+
+.site-footer__top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.site-footer__brand {
+  max-width: 280px;
+}
+
+.site-footer__logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer__logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer__logo span {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .site-footer__tagline {
   font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.site-footer__links {
+  display: flex;
+  gap: 3rem;
+}
+
+.site-footer__col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer__col li {
+  margin-bottom: 0.35rem;
+}
+
+.site-footer__col a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.site-footer__col a:hover {
+  color: #fff;
+}
+
+.site-footer__heading {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.75rem;
+}
+
+.site-footer__bottom {
+  font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -516,6 +593,14 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   color: #cbd5e1;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+a.tag:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
 }
 
 /* ==================== Prose ==================== */
@@ -1032,6 +1117,167 @@ img {
   text-align: center;
 }
 
+/* ==================== Category Filters ==================== */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.category-filter {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.category-filter:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.category-filter.is-active {
+  background: var(--color-navy);
+  border-color: var(--color-navy);
+  color: #fff;
+}
+
+/* ==================== 404 Error Page ==================== */
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.error-page__inner {
+  max-width: 480px;
+}
+
+.error-page__code {
+  display: block;
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--color-bg-muted);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.error-page__title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.error-page__text {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.error-page__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn--outline-dark {
+  background: transparent;
+  color: var(--color-navy);
+  border: 1px solid var(--color-border);
+}
+
+.btn--outline-dark:hover {
+  background: var(--color-bg-soft);
+  border-color: var(--color-navy-light);
+  color: var(--color-navy);
+}
+
+/* ==================== Cookie Consent Banner ==================== */
+.cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: var(--color-navy);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 1.5rem;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cookie-banner__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.cookie-banner__text {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cookie-banner__text a {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.cookie-banner__btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  cursor: pointer;
+  border: none;
+  transition: all 0.15s;
+  font-family: var(--font-body);
+}
+
+.cookie-banner__btn--accept {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.cookie-banner__btn--accept:hover {
+  background: var(--color-accent-hover);
+}
+
+.cookie-banner__btn--reject {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cookie-banner__btn--reject:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
 /* ==================== Responsive ==================== */
 @media (max-width: 768px) {
   .nav-toggle {
@@ -1088,9 +1334,26 @@ img {
     padding: 1.25rem 1.5rem;
   }
 
-  .site-footer__inner {
+  .site-footer__top {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 2rem;
+  }
+
+  .site-footer__links {
+    gap: 2rem;
+  }
+
+  .site-footer__bottom {
     text-align: center;
+  }
+
+  .cookie-banner__inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .error-page__actions {
+    flex-direction: column;
   }
 }

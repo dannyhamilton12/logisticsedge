@@ -1,0 +1,60 @@
+---
+/**
+ * CookieConsent — GDPR/UK PECR cookie consent banner.
+ * Shows on first visit. Stores preference in localStorage.
+ * Controls whether analytics and ad scripts load.
+ */
+---
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <div class="cookie-banner__inner">
+    <p class="cookie-banner__text">
+      We use cookies for analytics and advertising.
+      <a href="/privacy/">Privacy policy</a>
+    </p>
+    <div class="cookie-banner__actions">
+      <button class="cookie-banner__btn cookie-banner__btn--reject" id="cookie-reject">Reject all</button>
+      <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookie-accept">Accept all</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const banner = document.getElementById('cookie-banner');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const rejectBtn = document.getElementById('cookie-reject');
+
+  function getCookieConsent(): string | null {
+    return localStorage.getItem('le-cookie-consent');
+  }
+
+  function setCookieConsent(value: string) {
+    localStorage.setItem('le-cookie-consent', value);
+  }
+
+  function hideBanner() {
+    if (banner) banner.style.display = 'none';
+  }
+
+  function showBanner() {
+    if (banner) banner.style.display = 'block';
+  }
+
+  // Check existing consent
+  const consent = getCookieConsent();
+  if (consent) {
+    hideBanner();
+  } else {
+    showBanner();
+  }
+
+  acceptBtn?.addEventListener('click', () => {
+    setCookieConsent('accepted');
+    hideBanner();
+  });
+
+  rejectBtn?.addEventListener('click', () => {
+    setCookieConsent('rejected');
+    hideBanner();
+  });
+</script>
