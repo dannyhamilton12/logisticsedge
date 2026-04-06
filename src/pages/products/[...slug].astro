@@ -12,28 +12,160 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-const { title, description, price, type, tags } = entry.data;
+const { title, description, price, type, tags, stripeUrl, leadMagnet } = entry.data;
+
+const isFree = price === '0';
+const formattedPrice = isFree ? 'Free' : `£${price}`;
+
+const typeLabels: Record<string, string> = {
+  toolkit: 'Premium Toolkit',
+  guide: 'Guide',
+  template: 'Template',
+  course: 'Course',
+};
 ---
 
 <BaseLayout title={title} description={description}>
-  <div class="container container--narrow">
-    <header class="article-header">
-      <p class="article-header__category">{type}</p>
-      <h1 class="article-header__title">{title}</h1>
-      <div class="article-header__meta">
-        <span>{price}</span>
+  <div class="product-hero">
+    <div class="product-hero__inner">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/" class="breadcrumbs__link">Home</a>
+            <span class="breadcrumbs__sep">/</span>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="/products/" class="breadcrumbs__link">Products</a>
+            <span class="breadcrumbs__sep">/</span>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__current" aria-current="page">{title}</span>
+          </li>
+        </ol>
+      </nav>
+      <span class="product-hero__type">{typeLabels[type] || type}</span>
+      <h1 class="product-hero__title">{title}</h1>
+      <p class="product-hero__description">{description}</p>
+      <div class="product-hero__price-row">
+        <span class={`product-hero__price ${isFree ? 'product-hero__price--free' : ''}`}>{formattedPrice}</span>
+        {!isFree && (
+          <a href={stripeUrl || '#buy'} class="btn btn--primary btn--lg" id="buy-btn">
+            Buy now
+          </a>
+        )}
+        {isFree && (
+          <a href="#download" class="btn btn--primary btn--lg">
+            Download free
+          </a>
+        )}
       </div>
-      {tags && tags.length > 0 && (
-        <div class="article-header__tags">
-          {tags.map((tag: string) => (
-            <span class="tag">{tag}</span>
-          ))}
-        </div>
-      )}
-    </header>
-
-    <div class="prose">
-      <Content />
     </div>
   </div>
+
+  <div class="container container--narrow">
+    <!-- Preview content with gate -->
+    <div class="product-content" id="product-content">
+      <div class="prose product-content__preview" id="product-preview">
+        <Content />
+      </div>
+      <div class="product-gate" id="product-gate">
+        <div class="product-gate__fade"></div>
+        <div class="product-gate__cta">
+          {!isFree ? (
+            <div class="product-gate__box">
+              <h2 class="product-gate__title">Get the full {type}</h2>
+              <p class="product-gate__text">
+                This preview shows the structure and first sections. Purchase to unlock all {type === 'toolkit' ? '20 chapters, templates, checklists, and frameworks' : 'content, templates, and resources'}.
+              </p>
+              <div class="product-gate__price">{formattedPrice}</div>
+              <a href={stripeUrl || '#buy'} class="btn btn--primary btn--lg product-gate__btn">
+                Buy now — {formattedPrice}
+              </a>
+              {!stripeUrl && (
+                <p class="product-gate__note">Payment processing coming soon. Email <a href="mailto:hello@logisticsedge.co.uk">hello@logisticsedge.co.uk</a> to purchase.</p>
+              )}
+              <p class="product-gate__guarantee">Instant delivery via email. 30-day money-back guarantee.</p>
+            </div>
+          ) : (
+            <div class="product-gate__box" id="download">
+              <h2 class="product-gate__title">Download this free resource</h2>
+              <p class="product-gate__text">
+                Enter your email to get the full {type} delivered to your inbox.
+              </p>
+              <form
+                action="https://buttondown.com/api/emails/newsletter-subscribe"
+                method="post"
+                class="product-gate__form"
+                target="_blank"
+              >
+                <input type="hidden" name="tag" value={`product-${entry.id}`} />
+                <div class="product-gate__form-row">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@company.com"
+                    required
+                    class="product-gate__input"
+                    aria-label="Email address"
+                  />
+                  <button type="submit" class="btn btn--primary btn--lg">Download</button>
+                </div>
+              </form>
+              <p class="product-gate__guarantee">Free. No spam. Unsubscribe anytime.</p>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {tags && tags.length > 0 && (
+      <div class="product-tags">
+        {tags.map((tag: string) => (
+          <span class="tag tag--light">{tag}</span>
+        ))}
+      </div>
+    )}
+  </div>
+
+  <!-- Gate the content: show preview, fade out the rest -->
+  <script>
+    function gateContent() {
+      const preview = document.getElementById('product-preview');
+      const gate = document.getElementById('product-gate');
+      if (!preview || !gate) return;
+
+      // Find all headings in the content
+      const headings = preview.querySelectorAll('h2');
+
+      // For paid products: show intro + contents/first 2 sections
+      // For free products: show intro + first section
+      const maxVisible = gate.querySelector('.product-gate__form') ? 2 : 3;
+
+      if (headings.length > maxVisible) {
+        // Hide content after the Nth heading
+        let hiding = false;
+        let count = 0;
+
+        for (const el of Array.from(preview.children)) {
+          if (el.tagName === 'H2') {
+            count++;
+            if (count > maxVisible) {
+              hiding = true;
+            }
+          }
+          if (hiding) {
+            (el as HTMLElement).style.display = 'none';
+          }
+        }
+
+        // Show the gate
+        gate.style.display = 'block';
+      } else {
+        // Not enough content to gate — hide the gate
+        gate.style.display = 'none';
+      }
+    }
+
+    gateContent();
+  </script>
 </BaseLayout>

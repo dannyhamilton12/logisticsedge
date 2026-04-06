@@ -25,6 +25,7 @@ const products = defineCollection({
     type: z.enum(['toolkit', 'guide', 'template', 'course']),
     tags: z.array(z.string()).default([]),
     leadMagnet: z.string().optional(),
+    stripeUrl: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });

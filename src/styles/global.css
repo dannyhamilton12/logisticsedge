@@ -1117,6 +1117,194 @@ a.tag:hover {
   text-align: center;
 }
 
+/* ==================== Product Page ==================== */
+.product-hero {
+  background: linear-gradient(135deg, var(--color-navy) 0%, #1e3a5f 100%);
+  padding: 3rem 1.5rem 4rem;
+}
+
+.product-hero__inner {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.product-hero__type {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.15);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.product-hero__title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.product-hero__description {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 540px;
+  margin-bottom: 1.5rem;
+}
+
+.product-hero__price-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.product-hero__price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.product-hero__price--free {
+  color: var(--color-success);
+}
+
+.btn--lg {
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+}
+
+/* Product content gate */
+.product-content {
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+.product-content__preview {
+  position: relative;
+}
+
+.product-gate {
+  display: none;
+  position: relative;
+  margin-top: -6rem;
+  padding-top: 0;
+}
+
+.product-gate__fade {
+  height: 8rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none;
+}
+
+.product-gate__cta {
+  padding: 0 0 3rem;
+}
+
+.product-gate__box {
+  background: var(--color-bg-soft);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.product-gate__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.product-gate__text {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.product-gate__price {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+}
+
+.product-gate__btn {
+  display: inline-flex;
+  width: 100%;
+  max-width: 320px;
+  justify-content: center;
+}
+
+.product-gate__note {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 1rem;
+}
+
+.product-gate__note a {
+  color: var(--color-accent);
+}
+
+.product-gate__guarantee {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-top: 1rem;
+}
+
+.product-gate__form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.product-gate__form-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product-gate__input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color 0.15s;
+  background: #fff;
+  color: var(--color-text);
+}
+
+.product-gate__input:focus {
+  border-color: var(--color-accent);
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 0 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.tag--light {
+  background: var(--color-bg-muted);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-light);
+}
+
 /* ==================== Category Filters ==================== */
 .category-filters {
   display: flex;
@@ -1355,5 +1543,23 @@ a.tag:hover {
 
   .error-page__actions {
     flex-direction: column;
+  }
+
+  .product-hero__title {
+    font-size: 1.6rem;
+  }
+
+  .product-hero__price-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .product-gate__form-row {
+    flex-direction: column;
+  }
+
+  .product-gate__box {
+    padding: 2rem 1.5rem;
   }
 }
