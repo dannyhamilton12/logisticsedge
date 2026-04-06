@@ -109,6 +109,8 @@ Apply the duty rate to the customs value, then calculate import VAT on the combi
 
 The difference between claiming and not claiming the DCTS preference is £1,980 — on a single shipment.
 
+*For instant duty calculations on your own imports, including automatic preferential rate application, try our [UK Import Duty Calculator](/products/uk-import-duty-calculator-interactive/) — calculate duties, VAT, and total landed costs in seconds.*
+
 ## How to reduce import duty legally
 
 ### Trade agreements and preferential rates

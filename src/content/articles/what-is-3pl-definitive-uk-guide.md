@@ -225,6 +225,8 @@ The decision to outsource comes down to three questions:
 
 Choose carefully, define your SLAs, visit the warehouse, and negotiate transparent pricing. Get it right and your 3PL becomes an extension of your business. Get it wrong and you will spend more time managing the provider than you saved by outsourcing.
 
+*Ready to evaluate 3PL providers? Download our [Free 3PL Selection Checklist](/products/3pl-selection-checklist-free/) to systematically compare capabilities, costs, and service levels.*
+
 ## Need Help Evaluating Warehouse Operations?
 
 Whether you're assessing potential 3PL partners or optimizing your own warehouse, our [UK Warehouse Management Excellence Checklist](/products/uk-warehouse-management-checklist-free/) covers operational efficiency, health & safety compliance, and performance metrics.

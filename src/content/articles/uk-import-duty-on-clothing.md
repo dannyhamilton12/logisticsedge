@@ -5,6 +5,7 @@ pubDate: 2026-04-04
 author: "LogisticsEdge"
 category: "customs"
 tags: ["import-duty", "clothing", "textiles", "fashion", "uk-trade", "tariff-rates", "textile-imports", "duty-relief"]
+image: "/images/articles/uk-import-duty-on-clothing.jpg"
 draft: false
 ---
 

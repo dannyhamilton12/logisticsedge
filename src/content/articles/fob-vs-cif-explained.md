@@ -169,3 +169,7 @@ No. Both FOB and CIF apply exclusively to sea and inland waterway transport. For
 ### What insurance does the seller provide under CIF?
 
 The seller must arrange marine cargo insurance at minimum ICC Clause C level, covering the CIF value plus 10%. Clause C is basic cover — it includes total loss from major casualties (fire, sinking, collision) but excludes theft, pilferage, water damage, and many other common risks. If your cargo needs broader protection, you should either negotiate ICC Clause A cover with the seller or arrange your own supplementary policy.
+
+---
+
+*Need a quick reference for all 11 Incoterms? Download our [Free Incoterms Quick Reference Guide](/products/incoterms-quick-reference-guide-free/) with cost and risk allocation charts for every term.*

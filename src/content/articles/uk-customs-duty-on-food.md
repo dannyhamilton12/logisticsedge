@@ -5,6 +5,7 @@ pubDate: 2026-04-04
 author: "LogisticsEdge"
 category: "customs"
 tags: ["import-duty", "food-imports", "customs-clearance", "compliance"]
+image: "/images/articles/uk-customs-duty-on-food.jpg"
 draft: false
 ---
 

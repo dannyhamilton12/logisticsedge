@@ -5,6 +5,7 @@ pubDate: 2026-04-04
 author: "LogisticsEdge"
 category: "logistics"
 tags: ["3pl-selection", "outsourcing", "vendor-management", "logistics-strategy"]
+image: "/images/articles/how-to-choose-a-3pl-uk.jpg"
 draft: false
 ---
 

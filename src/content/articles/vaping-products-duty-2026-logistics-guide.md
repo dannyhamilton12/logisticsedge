@@ -5,6 +5,7 @@ pubDate: 2026-04-06
 author: "LogisticsEdge"
 category: "customs"
 tags: ["vaping-products-duty", "vape-stamps", "hmrc", "excise-duty", "customs-compliance", "warehousing", "imports"]
+image: "/images/articles/vaping-products-duty-2026-logistics-guide.jpg"
 draft: false
 ---
 

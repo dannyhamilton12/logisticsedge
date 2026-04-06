@@ -5,6 +5,7 @@ pubDate: 2026-04-04
 author: "LogisticsEdge"
 category: "logistics"
 tags: ["3pl", "logistics-outsourcing", "cost-analysis", "supply-chain-strategy"]
+image: "/images/articles/3pl-vs-in-house-logistics.jpg"
 draft: false
 ---
 

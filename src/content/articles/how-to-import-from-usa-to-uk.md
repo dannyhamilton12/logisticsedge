@@ -5,6 +5,7 @@ pubDate: 2026-04-04
 author: "LogisticsEdge"
 category: "customs"
 tags: ["usa-imports", "customs-clearance", "international-trade", "import-documentation"]
+image: "/images/articles/how-to-import-from-usa-to-uk.jpg"
 draft: false
 ---
 

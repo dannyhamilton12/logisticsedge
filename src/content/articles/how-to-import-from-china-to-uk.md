@@ -179,7 +179,7 @@ The right shipping method depends on four factors: shipment size, urgency, budge
 
 ### 1. Wrong Commodity Code Classification
 
-Using the wrong commodity code is one of the most expensive mistakes an importer can make. It can lead to overpaid duty (money you will struggle to reclaim), underpaid duty (triggering HMRC audits and penalties), or goods being held at the border. Take the time to classify correctly or pay a broker to do it for you.
+Using the wrong commodity code is one of the most expensive mistakes an importer can make. It can lead to overpaid duty (money you will struggle to reclaim), underpaid duty (triggering HMRC audits and penalties), or goods being held at the border. For step-by-step classification guidance, see our [UK commodity codes guide](/articles/uk-commodity-codes-tariff-classification-guide/), or pay a broker to do it for you.
 
 ### 2. Undervaluing Goods on the Invoice
 
@@ -191,7 +191,7 @@ Certain products sold in the UK must carry UKCA marking, meet specific safety st
 
 ### 4. Not Factoring in Total Landed Cost
 
-Many first-time importers focus on the unit price from the supplier and forget about freight, duty, VAT, port handling, haulage, broker fees, and inspection costs. Always calculate your total landed cost before committing to an order. A cheap unit price means nothing if the ancillary costs eat your margin.
+Many first-time importers focus on the unit price from the supplier and forget about freight, duty, VAT, port handling, haulage, broker fees, and inspection costs. Always calculate your total landed cost before committing to an order. Our [UK Import Duty Calculator](/products/uk-import-duty-calculator-interactive/) automatically factors in all these costs for accurate landed cost projections. A cheap unit price means nothing if the ancillary costs eat your margin.
 
 ### 5. Skipping Quality Inspections
 

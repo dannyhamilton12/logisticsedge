@@ -5,6 +5,7 @@ pubDate: 2026-04-05
 author: "LogisticsEdge"
 category: "customs"
 tags: ["cbam", "carbon-border-tax", "customs-compliance", "environmental-regulations", "import-duties"]
+image: "/images/articles/uk-cbam-carbon-border.jpg"
 draft: false
 ---
 

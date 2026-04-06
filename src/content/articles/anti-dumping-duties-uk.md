@@ -5,6 +5,7 @@ pubDate: 2026-04-05
 author: "LogisticsEdge"
 category: "customs"
 tags: ["anti-dumping-duties", "trade-remedies", "import-duties", "customs-compliance", "trade-defence"]
+image: "/images/articles/anti-dumping-duties-uk.jpg"
 draft: false
 ---
 

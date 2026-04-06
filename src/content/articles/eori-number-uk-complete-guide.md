@@ -188,6 +188,8 @@ Before your next international shipment, work through this checklist:
 - Map each trade route to the correct EORI prefix (GB or XI)
 - Set a calendar reminder to verify EORI details after any business registration change
 
+*Need help with your EORI application? Get our [Free EORI Number Application Checklist](/products/eori-number-application-checklist-free/) with step-by-step guidance and all required documentation.*
+
 ## Further Reading
 
 - [GOV.UK: Get an EORI Number](https://www.gov.uk/eori) — official HMRC guidance and application portal

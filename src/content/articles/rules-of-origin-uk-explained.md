@@ -5,6 +5,7 @@ pubDate: 2026-04-05
 author: "LogisticsEdge"
 category: "customs"
 tags: ["rules-of-origin", "trade-agreements", "preferential-duty", "customs-compliance", "import-duties"]
+image: "/images/articles/rules-of-origin-uk-explained.jpg"
 draft: false
 ---
 
