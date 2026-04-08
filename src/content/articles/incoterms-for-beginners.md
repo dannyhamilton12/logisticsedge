@@ -189,17 +189,17 @@ Like CFR, but the seller must also obtain insurance.
 
 | Term | Delivery Point | Risk Transfer | Who Pays Freight |
 |------|----------------|---------------|-------------------|
-| EXW | Seller's premises | At seller's premises | Buyer |
-| FCA | Carrier (named place) | To first carrier | Seller |
-| CPT | Destination (first carrier) | To first carrier | Seller |
-| CIP | Destination (first carrier) | To first carrier | Seller |
-| DAP | Destination (unloaded) | At destination | Seller |
-| DPU | Destination (unloaded) | After unloading | Seller |
-| DDP | Destination (duty paid) | At destination | Seller |
-| FAS | Alongside vessel | Alongside vessel | Buyer |
-| FOB | On vessel | On vessel | Buyer |
-| CFR | On vessel | On vessel | Seller |
-| CIF | On vessel | On vessel | Seller |
+| EXW | Seller's premises | When goods placed at buyer's disposal | Buyer |
+| FCA | Carrier (named place) | When handed to carrier | Buyer |
+| CPT | Named destination | When handed to first carrier | Seller |
+| CIP | Named destination | When handed to first carrier | Seller |
+| DAP | Named destination (ready for unloading) | When goods available for unloading | Seller |
+| DPU | Named destination (unloaded) | After unloading at destination | Seller |
+| DDP | Named destination (duty paid) | When goods available for unloading | Seller |
+| FAS | Alongside vessel at port | When placed alongside vessel | Buyer |
+| FOB | On board vessel | When goods on board vessel | Buyer |
+| CFR | Named destination port | When goods on board vessel | Seller |
+| CIF | Named destination port | When goods on board vessel | Seller |
 
 ---
 
