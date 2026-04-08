@@ -5,7 +5,7 @@ pubDate: 2026-04-08
 author: "LogisticsEdge"
 category: "warehousing"
 tags: ["warehouse kpis", "warehouse metrics", "warehouse performance", "logistics kpis"]
-image: ""
+image: "/images/articles/warehouse-kpis-metrics.jpg"
 draft: false
 ---
 
