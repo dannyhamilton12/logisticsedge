@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogisticsEdge Weekly Newsletter Template</title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    <style>
+        /* Email Client Reset */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+        }
+
+        /* LogisticsEdge Brand Colors */
+        :root {
+            --color-navy: #0f172a;
+            --color-navy-mid: #1e293b;
+            --color-navy-light: #334155;
+            --color-accent: #3b82f6;
+            --color-accent-hover: #2563eb;
+            --color-text: #1e293b;
+            --color-text-light: #64748b;
+            --color-text-muted: #94a3b8;
+            --color-border: #e2e8f0;
+            --color-bg: #ffffff;
+            --color-bg-soft: #f8fafc;
+            --color-customs: #8b5cf6;
+            --color-logistics: #0ea5e9;
+            --color-trade: #f97316;
+            --color-supply-chain: #10b981;
+            --color-warehousing: #6366f1;
+        }
+
+        /* Main Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            padding: 24px 32px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #ffffff;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .logo .accent {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .issue-info {
+            color: #94a3b8;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .date {
+            color: #64748b;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        /* Content Sections */
+        .content {
+            padding: 0;
+        }
+
+        .section {
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-header {
+            padding: 24px 32px 16px;
+            background-color: #f8fafc;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0;
+            letter-spacing: -0.01em;
+        }
+
+        .section-subtitle {
+            font-size: 14px;
+            color: #64748b;
+            margin: 4px 0 0 0;
+        }
+
+        .section-content {
+            padding: 0 32px 24px;
+        }
+
+        /* Article Cards */
+        .article-card {
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .article-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .article-header {
+            padding: 16px 20px 12px;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .article-category {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .category-customs { background-color: #f3f4f6; color: #8b5cf6; }
+        .category-logistics { background-color: #f0f9ff; color: #0ea5e9; }
+        .category-trade { background-color: #fff7ed; color: #f97316; }
+        .category-supply-chain { background-color: #f0fdf4; color: #10b981; }
+        .category-warehousing { background-color: #eef2ff; color: #6366f1; }
+
+        .article-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0f172a;
+            text-decoration: none;
+            line-height: 1.4;
+            margin: 0;
+            display: block;
+        }
+
+        .article-title:hover {
+            color: #3b82f6;
+        }
+
+        .article-body {
+            padding: 0 20px 16px;
+        }
+
+        .article-summary {
+            font-size: 14px;
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0 0 12px 0;
+        }
+
+        .article-meta {
+            font-size: 12px;
+            color: #94a3b8;
+            margin: 0;
+        }
+
+        .read-more {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .read-more:hover {
+            color: #2563eb;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            background-color: #f8fafc;
+            padding: 20px 32px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .quick-links-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 16px 0;
+        }
+
+        .links-grid {
+            display: table;
+            width: 100%;
+        }
+
+        .links-row {
+            display: table-row;
+        }
+
+        .link-cell {
+            display: table-cell;
+            width: 50%;
+            padding-right: 16px;
+            vertical-align: top;
+        }
+
+        .quick-link {
+            display: block;
+            padding: 12px 16px;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #1e293b;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .quick-link:hover {
+            background-color: #f1f5f9;
+            border-color: #3b82f6;
+            color: #0f172a;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 32px;
+            text-align: center;
+        }
+
+        .footer-content {
+            margin-bottom: 24px;
+        }
+
+        .footer-title {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 16px;
+            margin: 0 0 8px 0;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            margin: 0 0 16px 0;
+            line-height: 1.6;
+        }
+
+        .footer-links {
+            margin: 0 0 24px 0;
+        }
+
+        .footer-links a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-size: 13px;
+            margin: 0 8px;
+        }
+
+        .footer-links a:hover {
+            color: #93c5fd;
+        }
+
+        .unsubscribe {
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .unsubscribe a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 480px) {
+            .email-container {
+                width: 100% !important;
+            }
+
+            .header,
+            .section-header,
+            .section-content,
+            .quick-links,
+            .footer {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .logo {
+                font-size: 20px !important;
+            }
+
+            .section-title {
+                font-size: 16px !important;
+            }
+
+            .article-title {
+                font-size: 15px !important;
+            }
+
+            .links-grid,
+            .links-row,
+            .link-cell {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .link-cell {
+                padding-right: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <a href="https://logisticsedge.co.uk" class="logo">
+                Logistics<span class="accent">Edge</span>
+            </a>
+            <div class="issue-info">Weekly Newsletter • Issue #[ISSUE_NUMBER]</div>
+            <div class="date">[DATE]</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Editor's Note / Lead Story -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📍 This Week's Lead</h2>
+                    <p class="section-subtitle">The biggest story impacting UK logistics professionals</p>
+                </div>
+                <div class="section-content">
+                    <div class="article-card">
+                        <div class="article-header">
+                            <span class="article-category category-customs">CUSTOMS</span>
+                            <h3 class="article-title">[LEAD_STORY_TITLE]</h3>
+                        </div>
+                        <div class="article-body">
+                            <p class="article-summary">[LEAD_STORY_SUMMARY]</p>
+                            <p class="article-meta">
+                                <a href="[LEAD_STORY_LINK]" class="read-more">Read the full analysis →</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regulatory Updates -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">⚖️ Regulatory Roundup</h2>
+                    <p class="section-subtitle">Compliance changes, new regulations, and policy updates</p>
+                </div>
+                <div class="section-content">
+                    <!-- Regulation Item 1 -->
+                    <div class="article-card">
+                        <div class="article-header">
+                            <span class="article-category category-trade">COMPLIANCE</span>
+                            <h3 class="article-title">[REGULATION_TITLE_1]</h3>
+                        </div>
+                        <div class="article-body">
+                            <p class="article-summary">[REGULATION_SUMMARY_1]</p>
+                            <p class="article-meta">
+                                Effective: [EFFECTIVE_DATE] • <a href="[REGULATION_LINK_1]" class="read-more">Read more →</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Regulation Item 2 -->
+                    <div class="article-card">
+                        <div class="article-header">
+                            <span class="article-category category-customs">CUSTOMS</span>
+                            <h3 class="article-title">[REGULATION_TITLE_2]</h3>
+                        </div>
+                        <div class="article-body">
+                            <p class="article-summary">[REGULATION_SUMMARY_2]</p>
+                            <p class="article-meta">
+                                Deadline: [DEADLINE_DATE] • <a href="[REGULATION_LINK_2]" class="read-more">Read more →</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industry Insights -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">💡 Industry Insights</h2>
+                    <p class="section-subtitle">Market trends, analysis, and expert perspectives</p>
+                </div>
+                <div class="section-content">
+                    <!-- Insight Item 1 -->
+                    <div class="article-card">
+                        <div class="article-header">
+                            <span class="article-category category-logistics">LOGISTICS</span>
+                            <h3 class="article-title">[INSIGHT_TITLE_1]</h3>
+                        </div>
+                        <div class="article-body">
+                            <p class="article-summary">[INSIGHT_SUMMARY_1]</p>
+                            <p class="article-meta">
+                                <a href="[INSIGHT_LINK_1]" class="read-more">Read our analysis →</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Insight Item 2 -->
+                    <div class="article-card">
+                        <div class="article-header">
+                            <span class="article-category category-supply-chain">SUPPLY CHAIN</span>
+                            <h3 class="article-title">[INSIGHT_TITLE_2]</h3>
+                        </div>
+                        <div class="article-body">
+                            <p class="article-summary">[INSIGHT_SUMMARY_2]</p>
+                            <p class="article-meta">
+                                <a href="[INSIGHT_LINK_2]" class="read-more">Read our analysis →</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curated Resources -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📚 Essential Reads</h2>
+                    <p class="section-subtitle">Hand-picked guides, tools, and resources for logistics professionals</p>
+                </div>
+                <div class="section-content">
+                    <!-- Resource Item 1 -->
+                    <div class="article-card">
+                        <div class="article-header">
+                            <span class="article-category category-warehousing">GUIDE</span>
+                            <h3 class="article-title">[RESOURCE_TITLE_1]</h3>
+                        </div>
+                        <div class="article-body">
+                            <p class="article-summary">[RESOURCE_SUMMARY_1]</p>
+                            <p class="article-meta">
+                                <a href="[RESOURCE_LINK_1]" class="read-more">Access the guide →</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Resource Item 2 -->
+                    <div class="article-card">
+                        <div class="article-header">
+                            <span class="article-category category-trade">TOOL</span>
+                            <h3 class="article-title">[RESOURCE_TITLE_2]</h3>
+                        </div>
+                        <div class="article-body">
+                            <p class="article-summary">[RESOURCE_SUMMARY_2]</p>
+                            <p class="article-meta">
+                                <a href="[RESOURCE_LINK_2]" class="read-more">Try the tool →</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="quick-links">
+            <h3 class="quick-links-title">🚀 Quick Links</h3>
+            <div class="links-grid">
+                <div class="links-row">
+                    <div class="link-cell">
+                        <a href="https://logisticsedge.co.uk/articles/import-duty-uk-complete-guide/" class="quick-link">UK Import Duty Guide</a>
+                        <a href="https://logisticsedge.co.uk/articles/what-is-3pl-definitive-uk-guide/" class="quick-link">3PL Guide</a>
+                    </div>
+                    <div class="link-cell">
+                        <a href="https://logisticsedge.co.uk/articles/customs-clearance-uk-step-by-step-guide/" class="quick-link">Customs Clearance Guide</a>
+                        <a href="https://logisticsedge.co.uk/articles/incoterms-explained-visual-uk-guide/" class="quick-link">Incoterms Explained</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <h3 class="footer-title">LogisticsEdge</h3>
+                <p class="footer-text">
+                    Professional insights for UK logistics and customs professionals.<br>
+                    Practical guidance, no fluff.
+                </p>
+                <div class="footer-links">
+                    <a href="https://logisticsedge.co.uk">Website</a> •
+                    <a href="https://logisticsedge.co.uk/articles/">All Articles</a> •
+                    <a href="mailto:hello@logisticsedge.co.uk">Contact</a>
+                </div>
+            </div>
+            <div class="unsubscribe">
+                You're receiving this because you subscribed to LogisticsEdge Weekly.<br>
+                <a href="[UNSUBSCRIBE_URL]">Unsubscribe</a> or <a href="[MANAGE_URL]">manage preferences</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
