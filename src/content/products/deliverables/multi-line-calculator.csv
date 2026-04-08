@@ -1,0 +1,49 @@
+# Multi-Line Calculator - Tab 3
+# For mixed shipments with up to 20 product lines
+# Calculates totals automatically
+
+# Headers
+Line,Description,Commodity Code,Origin,Invoice Value (GBP),Freight (GBP),Insurance (GBP),Quantity,Duty Rate %,CIF Value,Duty Amount,VAT Base,VAT Amount,Total Cost
+
+# Line 1
+1,"[User input]","[10-digit code]","[Country]",0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+
+# Line 2-20 (template rows)
+2,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+3,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+4,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+5,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+6,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+7,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+8,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+9,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+10,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+11,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+12,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+13,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+14,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+15,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+16,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+17,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+18,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+19,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+20,,,,0.00,0.00,0.00,0,0.0%,0.00,0.00,0.00,0.00,0.00
+
+# TOTALS ROW
+TOTALS,"20 lines","Mixed","Various",=SUM(E2:E21),=SUM(F2:F21),=SUM(G2:G21),=SUM(H2:H21),"N/A",=SUM(J2:J21),=SUM(K2:K21),=SUM(L2:L21),=SUM(M2:M21),=SUM(N2:N21)
+
+# FORMULA REFERENCE:
+# Column J (CIF Value per line): =E[row]+F[row]+G[row]
+# Column K (Duty Amount): =J[row]*I[row]/100 (if duty rate > 0)
+# Column L (VAT Base): =J[row]+K[row]
+# Column M (VAT Amount): =L[row]*0.20 (or 0.05 or 0.00 based on commodity)
+# Column N (Total Cost): =J[row]+K[row]+M[row]
+
+# Note: Users should copy formulas down from row 2 to rows 3-21
+# When currency conversion is needed, apply exchange rate to invoice value before entering
+
+# STYLING NOTES:
+# Input cells (E,G,H,I): Yellow background
+# Output cells (J,K,L,M,N): Grey background
+# TOTALS row: Navy background with white text
+# Conditional formatting: Highlight if any line has values entered

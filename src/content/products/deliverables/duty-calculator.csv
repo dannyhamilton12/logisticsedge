@@ -1,0 +1,48 @@
+# UK Import Duty Calculator - Tab 2: Duty Calculator
+# Format: CSV with formula comments
+# To use: Import this into Google Sheets or Excel
+# Formulas are documented in comments starting with # FORMULA:
+
+# ===== HEADER ROW =====
+# FORMULA: N/A - Static header
+Product Description,Commodity Code,Country of Origin,Invoice Value (GBP),Invoice Currency,Exchange Rate,Freight (GBP),Insurance (GBP),Quantity,Duty Rate %,Preferential Rate,Anti-Dumping,CIF Value,Duty Amount,VAT Rate %,Import VAT Base,Import VAT Amount,Total Landed Cost,Duty Per Unit
+
+# ===== SAMPLE DATA ROW (for testing formulas) =====
+# FORMULA: Commodity Code lookup =VLOOKUP(B2,RateLookup!A:F,3,FALSE)
+# FORMULA: Exchange Rate =IF(C2="GBP",1,IF(C2="EUR",0.856,IF(C2="USD",0.789,IF(C2="CNY",0.108,IF(C2="JPY",0.0053,1)))))
+# FORMULA: CIF Value =D2+E2+G2
+# FORMULA: Duty Amount =IF(H2="Yes",0,IF(preferential_available,preferential_rate*CIF,standard_rate*CIF))
+# FORMULA: VAT Rate =IF(H2="Yes",0,IF(contains(commodity_code,"food"),0.05,0.20))
+# FORMULA: Import VAT Base =CIF + Duty Amount
+# FORMULA: Import VAT Amount =Import VAT Base * VAT Rate
+# FORMULA: Total Landed Cost =CIF + Duty Amount + Import VAT Amount
+# FORMULA: Duty Per Unit =IF(Q2>0,Duty Amount/Q2,0)
+Sample Industrial Component,84713000,China,5000,USD,0.789,350,50,100,0.0%,TCA 0%,No,5450.50,0.00,20%,5450.50,1090.10,6540.60,0.00
+
+# ===== FORMULA REFERENCE (for implementation) =====
+# Copy these formulas when building the Google Sheet:
+
+# Cell B2 (Commodity Code): =VLOOKUP(B2,'Rate Lookup'!A:F,3,FALSE)
+# Cell C2 (Country of Origin): [Dropdown list of countries]
+# Cell D2 (Invoice Value): [User input - number]
+# Cell E2 (Invoice Currency): [Dropdown - GBP,USD,EUR,CNY,JPY]
+# Cell F2 (Exchange Rate): =IF(E2="GBP",1,IF(E2="EUR",0.856,IF(E2="USD",0.789,IF(E2="CNY",0.108,IF(E2="JPY",0.0053,1)))))
+# Cell G2 (Freight): [User input - number]
+# Cell H2 (Insurance): [User input - number]
+# Cell I2 (Quantity): [User input - number, optional]
+# Cell J2 (Standard Duty Rate %): =IFERROR(VLOOKUP(B2,'Rate Lookup'!A:D,4,FALSE),0)
+# Cell K2 (Preferential Rate): =IFERROR(VLOOKUP(B2,'Rate Lookup'!A:E,5,FALSE),"N/A")
+# Cell L2 (Anti-Dumping Flag): =IFERROR(VLOOKUP(B2,'Rate Lookup'!A:F,6,FALSE),"No")
+# Cell M2 (CIF Value): =D2*F2+G2+H2
+# Cell N2 (Duty Amount): =IF(L2="Yes",0,IF(K2="N/A",M2*J2/100,M2*VALUE(SUBSTITUTE(K2,"%","")/100)))
+# Cell O2 (VAT Rate %): =IF(OR(B2="","",ISNUMBER(SEARCH("food",B2))),5,20)
+# Cell P2 (Import VAT Base): =M2+N2
+# Cell Q2 (Import VAT Amount): =P2*O2/100
+# Cell R2 (Total Landed Cost): =M2+N2+Q2
+# Cell S2 (Duty Per Unit): =IF(I2>0,N2/I2,0)
+
+# ===== STYLING NOTES =====
+# Input cells (D2,I2,G2,H2): Yellow background (#FFF9C4), border
+# Output cells (M2,R2): Grey background (#E0E0E0), locked
+# Headers: Navy (#0F172A) with white text
+# Conditional formatting: Green if K2 shows preferential rate, Amber if L2="Yes", Red if B2 not found

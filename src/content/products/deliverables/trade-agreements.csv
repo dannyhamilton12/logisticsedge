@@ -1,0 +1,36 @@
+# UK Trade Agreement Rates Reference
+# As of April 2026
+# Source: gov.uk/guidance/uk-trade-agreements
+
+Agreement,Partner Countries,Preferential Rate Available,Rules of Origin Summary,Notes
+UK-EU TCA (Trade and Cooperation Agreement),EU Member States,0% on most goods,Wholly obtained or sufficient processing in EU/UK,Most comprehensive UK trade agreement
+UK-Japan CEPA,Japan,0% on most goods,Value content ≥40% from UK/Japan or CTH,First post-Brexit agreement
+UK-Canada CETA,Canada,0% on most goods,Value content ≥40% from UK/Canada,Provisional application
+UK-Australia FTA,Australia,0% on most goods,Value content ≥40% from UK/Australia,Full agreement in force
+UK-New Zealand FTA,New Zealand,0% on most goods,Value content ≥40% from UK/NZ,Full agreement in force
+UK-Singapore DTA,Singapore,0% on most goods,Value content ≥40% from UK/Singapore,Digital trade elements
+UK-Korea FTA,South Korea,0% on most goods,Value content ≥40% from UK/Korea,Adapted from EU agreement
+CPTPP (Trans-Pacific),Japan/Canada/Australia/NZ/Mexico/Peru/Vietnam/Brunei/Malaysia/Singapore,0% on most goods,Value content ≥40% from CPTPP members,UK joined 2024
+DCTS (Developing Countries),68+ developing countries,0% to reduced rates,Self-certification for DCTS,Replaced GSP
+UK-India FTA,India,Negotiating,Pending,Not yet in force
+UK-GCC FTA,Gulf Cooperation Council,Negotiating,Pending,Not yet in force
+UK-Switzerland TCA,Switzerland,0% on most goods,Swiss origin rules,Updated from EFTA
+
+# Country Mapping for Calculator Dropdown
+# Countries with Preferential Rate Agreements:
+
+# Full Preferential (0% under TCA/FTA):
+EU27: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden
+Other FTA: Japan, Canada, Australia, New Zealand, Singapore, South Korea
+
+# DCTS Countries (Reduced/0% rates):
+Afghanistan, Angola, Bangladesh, Benin, Bolivia, Burkina Faso, Burundi, Cambodia, Cameroon, Central African Republic, Chad, Colombia, Congo (DRC), Costa Rica, Côte d'Ivoire, Cuba, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Ethiopia, Fiji, Gambia, Ghana, Guatemala, Guinea, Guyana, Haiti, Honduras, India, Indonesia, Jordan, Kenya, Kosovo, Laos, Lebanon, Lesotho, Liberia, Madagascar, Malawi, Mali, Mauritania, Moldova, Mongolia, Morocco, Mozambique, Nepal, Nicaragua, Niger, Nigeria, North Korea, Pakistan, Palestine, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Rwanda, Senegal, Sierra Leone, Solomon Islands, Somalia, South Sudan, Sri Lanka, St Kitts & Nevis, St Lucia, St Vincent & Grenadines, Sudan, Suriname, Syria, Tanzania, Thailand, Togo, Trinidad & Tobago, Tunisia, Uganda, Ukraine, Uzbekistan, Venezuela, Vietnam, Yemen, Zambia, Zimbabwe
+
+# No Preferential Agreement (Standard rates apply):
+China, USA, Brazil, Argentina, Russia, Turkey, Saudi Arabia, UAE, Taiwan, Hong Kong, Switzerland (separate TCA)
+
+# Notes:
+# - Always verify current status at gov.uk/guidance/uk-trade-agreements
+# - Rules of origin requirements vary by product category
+# - Some goods may be subject to additional duties (anti-dumping, safeguards)
+# - DCTS eligibility criteria apply - check gov.uk/dcts for details

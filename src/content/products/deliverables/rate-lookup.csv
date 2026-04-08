@@ -1,0 +1,102 @@
+# UK Import Duty Rate Lookup Table
+# Top 50 Common UK Import Commodity Codes
+# Source: UK Global Tariff (trade-tariff.service.gov.uk) - April 2026
+# Format: HS Code,Description,Standard Duty %,EU TCA Preferential %,CPTPP %,DCTS %,Anti-Dumping
+
+# Column Headers
+HS Code,Description,Standard Duty %,TCA Preferential %,CPTPP %,DCTS %,Anti-Dumping
+
+# Electronics & IT (Chapter 84-85)
+84713000,"Automatic data processing machines (computers)",0.0%,0.0%,0.0%,0.0%,No
+84714100,"Data processing machines complete, in cabinet",0.0%,0.0%,0.0%,0.0%,No
+85171200,"Telephones for cellular networks/mobile phones",0.0%,0.0%,0.0%,0.0%,No
+85287200,"Colour television receivers",14.0%,0.0%,0.0%,0.0%,No
+85176200,"Machines for reception/conversion of voice/data",0.0%,0.0%,0.0%,0.0%,No
+
+# Machinery (Chapter 84)
+84081000,"Compression-ignition diesel engines",2.7%,0.0%,0.0%,0.0%,No
+84145100,"Table/floor/desk/personal fans, output ≤125W",6.7%,0.0%,0.0%,0.0%,No
+84145900,"Other fans (excluding those of 8414.51)",3.7%,0.0%,0.0%,0.0%,No
+84221100,"Dish washing machines, household type",2.2%,0.0%,0.0%,0.0%,No
+84439900,"Printer parts & accessories",0.0%,0.0%,0.0%,0.0%,No
+
+# Vehicles (Chapter 87)
+87032190,"Spark-ignition engines ≤1000cc, new",10.0%,0.0%,0.0%,0.0%,No
+87033290,"Diesel engines 1500-2500cc, used",10.0%,0.0%,0.0%,0.0%,No
+87112000,"Motorcycles with reciprocating engine 50-250cc",8.9%,0.0%,0.0%,0.0%,No
+87141000,"Parts & accessories of motorcycles",6.5%,0.0%,0.0%,0.0%,No
+
+# Textiles & Clothing (Chapter 61-62)
+62034200,"Men's trousers/breeches of cotton",12.0%,0.0%,6.0%,0.0%,No
+62046200,"Women's trousers/breeches of cotton",12.0%,0.0%,6.0%,0.0%,No
+61091000,"T-shirts of cotton, knitted",12.0%,0.0%,6.0%,0.0%,No
+61102000,"Sweaters/pullovers of cotton, knitted",12.0%,0.0%,6.0%,0.0%,No
+
+# Furniture (Chapter 94)
+94016100,"Upholstered seats with wooden frames",0.0%,0.0%,0.0%,0.0%,No
+94036000,"Other wooden furniture",0.0%,0.0%,0.0%,0.0%,No
+94035000,"Wooden furniture for bedrooms",0.0%,0.0%,0.0%,0.0%,No
+94038100,"Furniture of bamboo",0.0%,0.0%,0.0%,0.0%,No
+
+# Plastics (Chapter 39)
+39262000,"Articles of plastic for apparel/clothing",6.5%,0.0%,0.0%,0.0%,No
+39249000,"Tableware/kitchenware of plastics",6.5%,0.0%,0.0%,0.0%,No
+39233000,"Carboys/bottles/flasks of plastics",6.5%,0.0%,0.0%,0.0%,No
+
+# Metals (Chapter 72-83)
+72142000,"Iron bars with deformations, hot-rolled",0.0%,0.0%,0.0%,0.0%,No
+73181500,"Other screws & bolts of iron/steel",3.7%,0.0%,0.0%,0.0%,No
+73239300,"Table/kitchen articles of stainless steel",6.5%,0.0%,0.0%,0.0%,No
+
+# Toys & Sports (Chapter 95)
+95030000,"Tricycles/scooters/pedal cars",0.0%,0.0%,0.0%,0.0%,No
+95045100,"Billiard tables",0.0%,0.0%,0.0%,0.0%,No
+95065900,"Badminton/squash rackets",0.0%,0.0%,0.0%,0.0%,No
+
+# Food Products (Chapter 1-24)
+08021200,"Fresh or dried almonds, shelled",3.2%,0.0%,0.0%,0.0%,No
+09011100,"Coffee, not roasted, not decaffeinated",0.0%,0.0%,0.0%,0.0%,No
+10063000,"Semi-milled/wholly milled rice",15.0%+€45.32/t,0.0%,0.0%,0.0%,No
+17011100,"Raw cane sugar, solid form",€33.76/100kg,0.0%,0.0%,0.0%,No
+21069098,"Food preparations not elsewhere specified",0.0%,0.0%,0.0%,0.0%,No
+
+# Chemicals (Chapter 28-38)
+28054000,"Argon",5.0%,0.0%,0.0%,0.0%,No
+30049000,"Medicines, measured doses/packaged for retail",0.0%,0.0%,0.0%,0.0%,No
+34022000,"Detergents in immediate packing ≤1 litre",4.0%,0.0%,0.0%,0.0%,No
+
+# Footwear (Chapter 64)
+64029910,"Footwear with rubber/plastic soles, covering ankle",16.8%,0.0%,8.0%,0.0%,No
+64029990,"Footwear with rubber/plastic soles, other",16.8%,0.0%,8.0%,0.0%,No
+64031900,"Footwear with leather outer soles",8.0%,0.0%,4.0%,0.0%,No
+
+# Leather Goods (Chapter 42)
+42021100,"Trunks/suit-cases with leather outer surface",3.7%,0.0%,0.0%,0.0%,No
+42022200,"Handbags with outer surface of plastics/textiles",3.7%,0.0%,0.0%,0.0%,No
+42023200,"Wallets with outer surface of plastics/textiles",3.7%,0.0%,0.0%,0.0%,No
+
+# Tools (Chapter 82)
+82054000,"Screwdrivers",3.7%,0.0%,0.0%,0.0%,No
+84672100,"Drills of all kinds, with self-contained motor",2.7%,0.0%,0.0%,0.0%,No
+84672200,"Saws with self-contained motor",2.7%,0.0%,0.0%,0.0%,No
+
+# Ceramics & Glass (Chapter 69-70)
+70134910,"Glassware for table/kitchen, toughened glass",11.0%,0.0%,0.0%,0.0%,No
+69120000,"Ceramic table/kitchen articles (not porcelain)",5.0%,0.0%,0.0%,0.0%,No
+
+# Motor Vehicle Parts (Chapter 87 - Anti-dumping applies)
+87089997,"Parts & accessories for motor vehicles, other",4.5%,0.0%,0.0%,0.0%,Yes
+87081010,"Bumpers & parts for motor vehicles",4.5%,0.0%,0.0%,0.0%,No
+87149400,"Brakes & hub brakes for motorcycles",5.0%,0.0%,0.0%,0.0%,No
+
+# Medical Equipment (Chapter 90)
+90181900,"Electro-diagnostic apparatus, other",0.0%,0.0%,0.0%,0.0%,No
+90215000,"Pacemakers, other than pulse generators",0.0%,0.0%,0.0%,0.0%,No
+
+# Notes:
+# - TCA = EU-UK Trade and Cooperation Agreement (0% for EU origin)
+# - CPTPP = Comprehensive and Progressive Agreement for Trans-Pacific Partnership
+# - DCTS = Developing Countries Trading Scheme (0% or reduced for developing countries)
+# - Anti-Dumping = Yes indicates potential anti-dumping duty may apply
+# - Duty rates shown are from UK Global Tariff as of April 2026
+# - Some rates include additional duties (e.g., €45.32/tonne for rice)
