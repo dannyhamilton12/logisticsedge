@@ -189,17 +189,17 @@ Like CFR, but the seller must also obtain insurance.
 
 | Term | Delivery Point | Risk Transfer | Who Pays Freight |
 |------|----------------|---------------|-------------------|
-| EXW | Seller's premises | When goods placed at buyer's disposal | Buyer |
-| FCA | Carrier (named place) | When handed to carrier | Buyer |
-| CPT | Named destination | When handed to first carrier | Seller |
-| CIP | Named destination | When handed to first carrier | Seller |
-| DAP | Named destination (ready for unloading) | When goods available for unloading | Seller |
-| DPU | Named destination (unloaded) | After unloading at destination | Seller |
-| DDP | Named destination (duty paid) | When goods available for unloading | Seller |
-| FAS | Alongside vessel at port | When placed alongside vessel | Buyer |
-| FOB | On board vessel | When goods on board vessel | Buyer |
-| CFR | Named destination port | When goods on board vessel | Seller |
-| CIF | Named destination port | When goods on board vessel | Seller |
+| EXW | Seller's premises | When goods placed at buyer's disposal | Buyer pays all freight |
+| FCA | Carrier (named place) | When handed to carrier | Buyer pays main freight |
+| CPT | Named destination | When handed to first carrier | Seller pays freight to destination |
+| CIP | Named destination | When handed to first carrier | Seller pays freight to destination |
+| DAP | Named destination (ready for unloading) | When goods available for unloading | Seller pays freight |
+| DPU | Named destination (unloaded) | After unloading at destination | Seller pays freight and unloading |
+| DDP | Named destination (duty paid) | When goods available for unloading | Seller pays everything including duty |
+| FAS | Alongside vessel at port | When placed alongside vessel | Buyer pays freight |
+| FOB | On board vessel | When goods on board vessel | Buyer pays freight |
+| CFR | Named destination port | When goods on board vessel | Seller pays freight |
+| CIF | Named destination port | When goods on board vessel | Seller pays freight |
 
 ---
 
@@ -218,7 +218,7 @@ For more on EORI numbers and UK customs registration, see our [EORI number guide
 
 ### Insurance Requirements
 
-Under CIP and CIF, sellers must obtain insurance. The minimum cover under Incoterms 2020 is CIF + 110% of the invoice value, covering Institute Cargo Clause (A) or equivalent.
+Under CIP and CIF, sellers must obtain insurance. CIP requires Institute Cargo Clauses (A) — maximum cover, while CIF requires Institute Cargo Clauses (C) — minimum cover. The minimum insurance required under Incoterms 2020 is 110% of CIF value.
 
 ### DDP and UK Import
 

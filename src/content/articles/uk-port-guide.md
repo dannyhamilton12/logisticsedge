@@ -177,7 +177,7 @@ During peak seasons, major ports can experience congestion. Building relationshi
 ## Frequently Asked Questions
 
 **Which UK port handles the most containers?**
-Felixstowe handles approximately 48% of UK containerised trade, making it the UK's largest container port with around 4 million TEUs annually. For more on container shipping, see our [FCL vs LCL shipping guide](https://logisticsedge.pages.dev/articles/fcl-vs-lcl-shipping/).
+Felixstowe handles approximately 48% of UK containerised trade, making it the UK's largest container port with around 4 million TEUs annually. For more on container shipping and import procedures, see our [import duty guide](https://logisticsedge.pages.dev/articles/import-duty-uk-complete-guide/).
 
 **Which UK port has the deepest water?**
 Port of Southampton has the deepest water access, thanks to its unique double tide system, allowing it to accommodate the world's largest vessels 24/7.
@@ -186,7 +186,7 @@ Port of Southampton has the deepest water access, thanks to its unique double ti
 Dover is the primary gateway for European trade, handling £144 billion in trade value annually through roll-on/roll-off freight services.
 
 **What is TEU?**
-TEU stands for Twenty-foot Equivalent Unit — the standard measure for containerised cargo. A 20-foot container equals one TEU; a 40-foot container equals two TEUs. Our [shipping container sizes guide](https://logisticsedge.pages.dev/articles/shipping-container-sizes-guide/) covers this in detail.
+TEU stands for Twenty-foot Equivalent Unit — the standard measure for containerised cargo. A 20-foot container equals one TEU; a 40-foot container equals two TEUs. Our [guide to importing from China](https://logisticsedge.pages.dev/articles/how-to-import-from-china-to-uk/) covers container shipping and logistics planning.
 
 **How do I ship to Liverpool?**
 Contact a freight forwarder who can arrange shipping to Liverpool via major shipping lines serving North American and other routes. The port handles around 0.8 million TEUs annually.
