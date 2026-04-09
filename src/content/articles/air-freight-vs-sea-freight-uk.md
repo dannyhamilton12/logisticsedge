@@ -5,7 +5,6 @@ pubDate: 2026-04-09
 author: "LogisticsEdge"
 category: "logistics"
 tags: ["air freight", "sea freight", "shipping costs", "freight comparison", "import logistics"]
-image: "/images/articles/air-freight-vs-sea-freight-uk.jpg"
 draft: false
 ---
 
