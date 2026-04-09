@@ -114,7 +114,7 @@ Perfect order rate measures the percentage of orders shipped without any failure
 - World-class: 95-98%
 - Typical ecommerce: 88-94%
 
-For more on warehouse operations, see our [3PL costs guide](https://logisticsedge.pages.dev/articles/3pl-costs-uk/) and [what to look for in a 3PL provider](https://logisticsedge.pages.dev/articles/how-to-choose-a-3pl-uk/).
+For more on warehouse operations, see our [3PL costs guide](/articles/3pl-costs-uk/) and [what to look for in a 3PL provider](/articles/how-to-choose-a-3pl-uk/).
 
 ---
 
@@ -191,33 +191,57 @@ Warehouse utilisation rate measures the percentage of available storage space be
 
 ---
 
-### 10. Carriers Missed Pickup Rate
+### 10. Carrier Missed Pickup Rate
 
-This metric tracks the percentage of carrier pickup windows missed due to warehouse delays.
+Carrier missed pickup rate tracks the percentage of scheduled carrier collection slots the warehouse fails to meet — either because orders aren't ready, loads aren't built, or the dock is congested.
 
-**Why it matters:** Missed pickups lead to delayed deliveries, carrier penalties, and damaged customer relationships.
+**Why it matters:** A missed pickup doesn't just delay one shipment. It cascades. A late DPD or DHL trailer pushes your orders to the next wave, which can miss the same-day cutoff, which breaks the promise the sales team made to the customer. In the worst case, carriers charge dead-run fees, reduce your priority in their routing, or downgrade your service tier at contract renewal.
 
-**Benchmark:** Under 2% for world-class operations.
+**Root causes to investigate:**
+
+- Picking is finishing after the carrier cutoff (cycle time issue)
+- Pack stations can't keep up with load build requirements
+- Dock scheduling doesn't reflect actual volume by carrier
+- Labels, manifests or EDI files are generated too late
+- No real-time view of which orders must ship today versus tomorrow
+
+**Benchmark:** Under 2% for world-class operations. Above 5% signals systemic cutoff misalignment.
+
+**How to improve it:** Build backwards from carrier cutoffs when planning picking waves. Use wave-planning tools that weight orders by carrier departure time, not order age.
 
 ---
 
 ### 11. Return Rate (Customer Returns)
 
-Return rate measures the percentage of orders returned by customers.
+Return rate measures the percentage of dispatched orders returned by customers, usually expressed by line or by order value.
 
-**Why it matters:** High return rates indicate problems with order accuracy, product quality, or customer expectations.
+**Why it matters:** A high return rate is rarely just a "customer problem". For a warehouse, it's a diagnostic that often points back inside the four walls — wrong item picked, wrong size shipped, wrong SKU mapped to the listing, damage in packing, or late delivery driving refusals. Returns also consume two passes of labour: once to ship, once to process back in, grade, restock or write off.
 
-**Benchmark:** Under 5% for most ecommerce operations.
+**Benchmark:**
+
+- Apparel/footwear: 25-40% is normal
+- Electronics: 8-15%
+- Health and beauty: 3-8%
+- B2B industrial: under 3%
+
+**How to improve it:** Track return reasons against pick, pack, ship and carrier events. If "wrong item" exceeds 1% of shipments, your picking accuracy is the issue. If "damaged" exceeds 0.5%, audit packing and dunnage specs. If "late" drives returns, your carrier SLA or cycle time needs work.
 
 ---
 
 ### 12. Cost Per Order
 
-Cost per order measures the total warehouse cost divided by the number of orders processed.
+Cost per order divides total warehouse operating cost (labour, rent, utilities, consumables, depreciation) by the number of orders fulfilled in the same period. It is the single metric that ties every other KPI together financially.
 
-**Why it matters:** This is the bottom-line metric that ties all operational efficiency together.
+**Why it matters:** If order cycle time drops but cost per order rises, you're buying speed with overtime or extra headcount — that's not efficiency, it's overspend. If picking accuracy improves but cost per order rises, the new scanning process is slower than the accuracy gain justifies. Cost per order is the reality check on every operational decision.
 
-**Benchmark:** Varies significantly by sector, but continuous improvement is the goal.
+**Benchmark ranges (UK 2026):**
+
+- Small parcel B2C ecommerce: £3.50-£6.50 per order
+- Multi-line fashion: £5.00-£9.00
+- B2B palletised: £8.00-£15.00+
+- Heavy or bulky items: varies widely by handling profile
+
+**How to improve it:** The two biggest levers are labour productivity (UPH and zone design) and space utilisation. Fixing either usually compounds — better slotting raises UPH, which lowers labour cost, which lowers cost per order. Track it monthly and chart it against volume so you can separate scale effects from real efficiency gains.
 
 ---
 
@@ -237,7 +261,7 @@ Once these are consistently measured and improving, add secondary metrics.
 
 ### Use the Right Tools
 
-A [warehouse management system (WMS)](https://logisticsedge.pages.dev/articles/what-is-3pl-definitive-uk-guide/) is essential for accurate KPI tracking. Manual tracking simply cannot provide the real-time data needed for operational decisions. If you're evaluating 3PL providers, their WMS capabilities directly impact the KPIs you can achieve.
+A [warehouse management system (WMS)](/articles/what-is-3pl-definitive-uk-guide/) is essential for accurate KPI tracking. Manual tracking simply cannot provide the real-time data needed for operational decisions. If you're evaluating 3PL providers, their WMS capabilities directly impact the KPIs you can achieve.
 
 ### Set Realistic Targets
 

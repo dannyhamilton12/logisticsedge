@@ -12,7 +12,7 @@ draft: false
 ## Key Takeaways
 
 - The Port of Felixstowe handles 48% of UK containerised trade — the country's largest container port
-- UK ports processed over 500 million tons of cargo in 2024
+- UK ports processed over 500 million tonnes of cargo in 2024
 - Port selection impacts lead times, shipping costs, and inland transport
 - Southampton offers the deepest water access, accommodating the world's largest vessels 24/7
 - Dover handles £144 billion in trade value through roll-on/roll-off freight
@@ -21,9 +21,9 @@ draft: false
 
 ## Why UK Ports Matter for Your Supply Chain
 
-The United Kingdom, an island nation with a storied maritime history, relies heavily on its ports as the vital arteries of global trade. In 2024 alone, these hubs processed over 500 million tonnes of cargo, underscoring their indispensable role in connecting British businesses to world markets.
+UK ports handle roughly 95% of the country's international trade by volume, according to the Department for Transport's annual Port Freight Statistics. In 2024 they processed over 500 million tonnes of cargo across more than 120 commercial sites.
 
-With over 120 commercial ports along its extensive coastline, the UK's maritime infrastructure handles an astonishing 95% of the country's international trade volume. Understanding the capabilities and strategic importance of these maritime gateways is paramount for any business involved in international logistics.
+For importers and exporters, port choice is never a minor decision. It shapes transit times, inland haulage cost, customs clearance speed, and — during peak periods — whether your containers move at all. The right gateway depends on where your cargo is going, what it is, and how time-sensitive it is.
 
 ---
 
@@ -44,7 +44,7 @@ With over 120 commercial ports along its extensive coastline, the UK's maritime 
 
 ### Port of Felixstowe: The UK's Premier Container Gateway
 
-Situated on the Suffolk coast, the Port of Felixstowe is unequivocally Britain's leading container port. It handles approximately 48% of the UK's containerised trade, serving over 30 shipping lines and maintaining direct connections with more than 700 ports worldwide.
+On the Suffolk coast, Felixstowe is the UK's largest container port. According to operator Hutchison Ports, Felixstowe handles around 48% of UK containerised trade, serves over 30 shipping lines, and connects to more than 700 ports worldwide.
 
 **Key facts:**
 
@@ -54,85 +54,82 @@ Situated on the Suffolk coast, the Port of Felixstowe is unequivocally Britain's
 - Supports over 13,000 jobs directly and indirectly
 - Up to 76 daily freight rail services
 
-**Why choose Felixstowe:** Its strategic location on the southeast coast provides optimal access to major shipping lanes connecting Europe and Asia. The deep-water berths accommodate the world's largest container vessels, including ultra-large container ships exceeding 400 metres in length.
-
-Recent infrastructure investments of £200 million underscore its commitment to maintaining its status as the UK's foremost container port.
+**Why choose Felixstowe:** Its southeast-coast position puts it directly on the main Asia-Europe container lane. The deep-water berths take the world's largest container vessels, including ultra-large ships over 400 metres long. Hutchison Ports has committed roughly £200 million in recent infrastructure upgrades, including new cranes and rail sidings, to keep pace with vessel sizes.
 
 ---
 
 ### Port of Southampton: Versatility and Deep-Water Access
 
-The Port of Southampton has evolved from its Victorian origins into one of the UK's most versatile and technologically advanced maritime facilities.
+Southampton is the UK's second-largest container port and its biggest vehicle-handling port. Operator Associated British Ports reports it moves around 1.5 million TEUs and 34.5 million tonnes of cargo a year, and supports roughly 15,000 jobs across the wider region.
 
 **Key facts:**
 
-- Handles approximately 1.5 million TEUs and 34.5 million tonnes of cargo annually
+- ~1.5 million TEUs and ~34.5 million tonnes of cargo annually (ABP figures)
 - 726 acres with 7 deep-water berths
-- Supports over 15,000 jobs
-- Handles £75 billion in exports annually
+- UK's number one port for vehicle handling
+- Rail connectivity to 23 inland terminals
 
-**Why choose Southampton:** Its unique double tide system grants exceptional deep-water access, allowing it to accommodate the world's largest vessels 24/7. The port is the UK's number one for vehicle handling and Europe's leading turnaround cruise port.
-
-Southampton offers comprehensive rail connectivity to 23 inland terminals across the UK, making it a vital multimodal hub. Recent investments include a £55 million vehicle export terminal and a £17 million initiative focused on air quality and sustainable operations.
+**Why choose Southampton:** The port has an unusual double high tide — about 17 hours of deep water per day — which lets the largest container vessels berth around the clock regardless of the normal tidal cycle. For time-sensitive vehicle exports and container cargo heading into the south and Midlands via rail, it's the natural choice. Recent ABP investments include a £55 million vehicle export terminal and a £17 million air quality and shore-power programme.
 
 ---
 
-### Port of London: Historic Hub with Modern Capabilities
+### Port of London: Multi-Terminal Hub on the Thames
 
-The Port of London Authority manages one of the UK's most historically significant and economically vital ports.
+The Port of London Authority (PLA) oversees the tidal Thames and the terminals along it, including London Gateway, Tilbury, Thamesport and a cluster of riverside wharves. Per PLA annual figures, the port handles over 53 million tonnes of cargo and contributes around £4 billion a year to the UK economy.
 
 **Key facts:**
 
-- Handles approximately 2.0 million TEUs annually
-- Over 53 million tonnes of cargo
-- Contributes £4 billion annually to the economy
-- Handles diverse cargo including bulk commodities, containers, and river terminal operations
+- Around 2.0 million TEUs annually (combined terminals)
+- 53+ million tonnes of cargo across the Thames estuary
+- Mix of containers, bulk commodities, aggregates and project cargo
+- London Gateway is one of the UK's newest deep-water container terminals
 
-**Why choose the Port of London:** Its extensive network of terminals provides flexibility for various cargo types. The port's proximity to the capital makes it ideal for goods destined for the London market.
+**Why choose the Port of London:** Proximity to the M25 and the southeast consumer market is the key advantage — London Gateway in particular cuts inland haulage distances for any cargo destined for the London and home counties market. The PLA's multi-terminal structure gives importers flexibility to match cargo type to the right wharf, from bulk aggregates at riverside terminals to deep-sea containers at London Gateway.
 
 ---
 
 ### Port of Immingham: The Energy and Bulk Hub
 
-Port of Immingham is the UK's largest bulk cargo port, handling energy imports and bulk materials.
+Immingham, on the Humber estuary, is the UK's largest port by tonnage. ABP operates the site as part of the Humber Ports cluster alongside Grimsby, Hull and Goole, and reports annual throughput of around 46 million tonnes.
 
 **Key facts:**
 
-- Annual cargo throughput: approximately 46 million tonnes
-- Major hub for energy imports, steel, and bulk commodities
-- Part of the Humber Ports network
+- ~46 million tonnes per year (ABP Humber Ports data)
+- Critical import hub for coal, biomass, oil products and steel
+- Dedicated roll-on/roll-off terminal for trailers from Rotterdam and Scandinavia
+- Rail-connected to the industrial north and Midlands
 
-**Why choose Immingham:** Ideal for bulk cargo shipments, particularly energy products and materials that don't require container handling.
+**Why choose Immingham:** If your cargo is bulk energy, steel, aggregates or roll-on/roll-off trailer freight from northern Europe, Immingham is usually the lowest-friction option. The combination of deep-water bulk berths, dedicated Ro-Ro terminals and direct rail routes into steel and power generation sites makes it the default northern gateway for heavy and bulk cargo.
 
 ---
 
 ### Port of Liverpool: Transatlantic Gateway
 
-The Port of Liverpool serves as a key gateway for transatlantic trade, connecting UK businesses with North American markets.
+Liverpool is the UK's main west-coast container port and the shortest route for most cargo moving between the UK and North America. Operator Peel Ports reports annual throughput of around 32 million tonnes and roughly 0.8 million TEUs through Liverpool2, the deep-water container terminal that opened in 2016.
 
 **Key facts:**
 
-- Handles approximately 0.8 million TEUs annually
-- 32 million tonnes of cargo throughput
-- Contributes £5 billion in regional economic value
-- Key hub for container handling
+- Around 0.8 million TEUs and 32 million tonnes per year (Peel Ports)
+- Liverpool2 terminal takes vessels up to 19,000 TEU
+- Short transatlantic sailings to the US East Coast and Canada
+- Strong rail connections to Manchester, the Midlands and Scotland
 
-**Why choose Liverpool:** Shorter shipping routes to North America make it cost-effective for transatlantic trade. Its position as a major UK port continues to grow with investment in container facilities.
+**Why choose Liverpool:** For cargo from North America heading into the northwest, Manchester, Yorkshire or Scotland, Liverpool cuts days off the alternative routing through southern ports plus inland haulage. The Liverpool2 investment means the port now handles vessels that previously had to discharge at Felixstowe or Rotterdam, removing a transhipment leg for many importers.
 
 ---
 
 ### Port of Dover: The Ro-Ro Powerhouse
 
-The Port of Dover is the world's busiest ferry port, handling an enormous volume of roll-on/roll-off freight.
+Dover is the busiest roll-on/roll-off ferry port in the UK and one of the busiest in the world. According to the Port of Dover Authority, the port handles trade worth around £144 billion a year — making it the most economically important single gateway for UK-EU trade by value.
 
 **Key facts:**
 
-- Handles £144 billion in trade value annually
-- Critical gateway for EU trade post-Brexit
+- ~£144 billion in annual trade value (Port of Dover figures)
 - Short Strait crossings to Calais and Dunkirk
-- Operates 24/7 with frequent ferry departures
+- Typically 2-hour door-to-dock turnaround for accompanied freight
+- Operates 24/7 with ferry departures every 30-60 minutes at peak
 
-**Why choose Dover:** For time-sensitive cargo and the shortest Channel crossings, Dover is unmatched. It's essential for businesses requiring rapid turnover times for European shipments.
+**Why choose Dover:** For accompanied trailer freight moving between the UK and the EU — particularly time-sensitive automotive, food, pharmaceutical and just-in-time manufacturing cargo — Dover is effectively the default. The short crossing time and high frequency mean shippers can plan delivery windows in hours rather than days. Post-Brexit, Dover and the inland border facility at Sevington now handle the bulk of GB-EU customs processing for Ro-Ro freight.
 
 ---
 
@@ -170,14 +167,14 @@ Choose ports closest to your final destination to minimise inland transport cost
 
 ### Factor in Capacity and Congestion
 
-During peak seasons, major ports can experience congestion. Building relationships with [freight forwarders](https://logisticsedge.pages.dev/articles/customs-broker-vs-freight-forwarder/) who monitor port activity helps secure capacity and avoid delays. Understanding [customs clearance procedures](https://logisticsedge.pages.dev/articles/customs-clearance-uk-step-by-step-guide/) is essential for smooth port operations.
+During peak seasons, major ports can experience congestion. Building relationships with [freight forwarders](/articles/customs-broker-vs-freight-forwarder/) who monitor port activity helps secure capacity and avoid delays. Understanding [customs clearance procedures](/articles/customs-clearance-uk-step-by-step-guide/) is essential for smooth port operations.
 
 ---
 
 ## Frequently Asked Questions
 
 **Which UK port handles the most containers?**
-Felixstowe handles approximately 48% of UK containerised trade, making it the UK's largest container port with around 4 million TEUs annually. For more on container shipping and import procedures, see our [import duty guide](https://logisticsedge.pages.dev/articles/import-duty-uk-complete-guide/).
+Felixstowe handles approximately 48% of UK containerised trade, making it the UK's largest container port with around 4 million TEUs annually. For more on container shipping and import procedures, see our [import duty guide](/articles/import-duty-uk-complete-guide/).
 
 **Which UK port has the deepest water?**
 Port of Southampton has the deepest water access, thanks to its unique double tide system, allowing it to accommodate the world's largest vessels 24/7.
@@ -186,7 +183,7 @@ Port of Southampton has the deepest water access, thanks to its unique double ti
 Dover is the primary gateway for European trade, handling £144 billion in trade value annually through roll-on/roll-off freight services.
 
 **What is TEU?**
-TEU stands for Twenty-foot Equivalent Unit — the standard measure for containerised cargo. A 20-foot container equals one TEU; a 40-foot container equals two TEUs. Our [guide to importing from China](https://logisticsedge.pages.dev/articles/how-to-import-from-china-to-uk/) covers container shipping and logistics planning.
+TEU stands for Twenty-foot Equivalent Unit — the standard measure for containerised cargo. A 20-foot container equals one TEU; a 40-foot container equals two TEUs. Our [guide to importing from China](/articles/how-to-import-from-china-to-uk/) covers container shipping and logistics planning.
 
 **How do I ship to Liverpool?**
 Contact a freight forwarder who can arrange shipping to Liverpool via major shipping lines serving North American and other routes. The port handles around 0.8 million TEUs annually.

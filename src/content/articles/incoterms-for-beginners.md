@@ -214,7 +214,7 @@ Since Brexit, UK-EU trade involves customs clearance on both sides. When using D
 - Duty and VAT obligations
 - EORI numbers for both UK and EU
 
-For more on EORI numbers and UK customs registration, see our [EORI number guide](https://logisticsedge.pages.dev/articles/eori-number-uk-complete-guide/).
+For more on EORI numbers and UK customs registration, see our [EORI number guide](/articles/eori-number-uk-complete-guide/).
 
 ### Insurance Requirements
 
@@ -279,10 +279,10 @@ These require separate contractual provisions.
 FCA (Free Carrier) and DAP (Delivered at Place) are the most commonly used in modern trade. FOB remains dominant for sea freight.
 
 **Should I use DDP as a UK importer?**
-Only if you're registered for UK import and prepared to pay duty upfront. Most UK importers use [DAP](https://logisticsedge.pages.dev/articles/ddp-vs-dap-incoterms/) or FCA to avoid import complexity. Our guide to [import VAT](https://logisticsedge.pages.dev/articles/uk-import-vat-explained/) covers the key considerations.
+Only if you're registered for UK import and prepared to pay duty upfront. Most UK importers use [DAP](/articles/ddp-vs-dap-incoterms/) or FCA to avoid import complexity. Our guide to [import VAT](/articles/uk-import-vat-explained/) covers the key considerations.
 
 **What's the difference between CIP and CIF?**
-CIP applies to any mode of transport; CIF is sea-only. Both require insurance, but CIP is more versatile. For a full comparison, see our [FOB vs CIF guide](https://logisticsedge.pages.dev/articles/fob-vs-cif-explained/).
+CIP applies to any mode of transport; CIF is sea-only. Both require insurance, but CIP is more versatile. For a full comparison, see our [FOB vs CIF guide](/articles/fob-vs-cif-explained/).
 
 **Can I use Incoterms for UK domestic sales?**
 Yes, Incoterms can be used for domestic contracts, though they were designed for international trade. The rules still apply.
