@@ -5,6 +5,7 @@ pubDate: 2026-04-09
 author: "LogisticsEdge"
 category: "logistics"
 tags: ["freight costs", "sea freight", "air freight", "haulage rates", "shipping"]
+image: "/images/articles/freight-costs-uk-guide.jpg"
 draft: false
 ---
 

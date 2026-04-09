@@ -5,6 +5,7 @@ pubDate: 2026-04-09
 author: "LogisticsEdge"
 category: "trade"
 tags: ["UK exports", "export declaration", "CDS", "EORI", "export licence", "HMRC"]
+image: "/images/articles/how-to-export-from-uk.jpg"
 draft: false
 ---
 

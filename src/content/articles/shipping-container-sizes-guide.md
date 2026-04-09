@@ -5,6 +5,7 @@ pubDate: 2026-04-09
 author: "LogisticsEdge"
 category: "logistics"
 tags: ["container sizes", "FCL shipping", "20ft container", "40ft container", "freight"]
+image: "/images/articles/shipping-container-sizes-guide.jpg"
 draft: false
 ---
 

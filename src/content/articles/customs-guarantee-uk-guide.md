@@ -242,7 +242,7 @@ Your import volumes change. If your duty liability decreases, you can apply to r
 
 JCL allows separate legal entities to guarantee each other's customs debts. This is useful for group structures where one entity has stronger credit than another.
 
-For more on customs compliance, see our [customs clearance step-by-step guide](/articles/customs-clearance-uk-step-by-step-guide/).
+For more on customs compliance, see our [customs clearance step-by-step guide](/articles/customs-clearance-uk-step-by-step-guide/). For more on customs broker services, see our [customs broker vs freight forwarder comparison](/articles/customs-broker-vs-freight-forwarder/).
 
 ## Frequently Asked Questions
 

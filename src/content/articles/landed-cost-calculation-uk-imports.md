@@ -5,7 +5,7 @@ pubDate: 2026-04-09
 author: "LogisticsEdge"
 category: "logistics"
 tags: ["landed cost", "import costs", "customs duty", "import VAT", "cost calculation"]
-
+image: "/images/articles/landed-cost-calculation-uk-imports.jpg"
 draft: false
 ---
 

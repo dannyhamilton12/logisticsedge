@@ -5,7 +5,7 @@ pubDate: 2026-04-09
 author: "LogisticsEdge"
 category: "trade"
 tags: ["rules of origin", "preferential origin", "UK trade agreements", "FTA", "certificate of origin"]
-
+image: "/images/articles/rules-of-origin-uk-explained.jpg"
 draft: false
 ---
 
