@@ -52,7 +52,7 @@ The legal framework for dangerous goods transport in the UK rests on three pilla
 
 **IMDG Code (International Maritime Dangerous Goods Code)** provides the global standard for safe sea transport of dangerous goods. Published by the International Maritime Organization (IMO), the IMDG Code is updated every two years. Amendment 42-24 entered transitional effect on 1 January 2025 and becomes mandatory from 1 January 2026, according to industry guidance from Hibiscus Plc and Gateway Cargo.
 
-The relationship between these instruments matters for compliance: the CDG Regulations give domestic legal effect to ADR and IMDG requirements. A breach of ADR or IMDG provisions is therefore a breach of the CDG Regulations, carrying criminal penalties.
+The relationship between these instruments matters for compliance: the CDG Regulations give domestic legal effect to ADR and IMDG requirements. A breach of ADR or IMDG provisions is therefore a breach of the CDG Regulations, carrying criminal penalties. For businesses importing dangerous goods, this compliance framework sits alongside standard customs procedures — see our [customs clearance step-by-step guide](/articles/customs-clearance-uk-step-by-step-guide/) for the full import process.
 
 For businesses shipping dangerous goods, this means you must comply with all three layers: the international code (ADR or IMDG depending on mode), as implemented by UK domestic law (CDG Regulations), as enforced by HSE and other authorities.
 
@@ -110,7 +110,7 @@ Proper documentation is the single most common compliance failure in dangerous g
 
 The declaration must be signed by the consignor or an authorised representative, confirming that the goods are properly classified, packaged, marked and labelled, and in all respects fit for transport.
 
-**Classification responsibility:** The consignor (shipper) is legally responsible for correct classification. This means determining the UN number, hazard class, packing group and proper shipping name before offering goods for transport. Misclassification — even if unintentional — is a breach of the CDG Regulations.
+**Classification responsibility:** The consignor (shipper) is legally responsible for correct classification. This means determining the UN number, hazard class, packing group and proper shipping name before offering goods for transport. Misclassification — even if unintentional — is a breach of the CDG Regulations. Classification shares similar precision requirements with commodity code classification for customs purposes — both require technical knowledge and carry penalties for errors. For guidance on getting commodity codes right, see our [commodity code classification tips](/articles/commodity-code-classification-tips/).
 
 For complex substances or mixtures, classification may require testing or expert assessment. Safety data sheets (SDS) provide useful information but are not sufficient on their own for transport classification — the SDS Section 14 contains transport information, but the consignor must verify it against current ADR/IMDG provisions.
 
@@ -135,6 +135,8 @@ Packaging must be:
 - In good condition (no rust, dents, or previous leakage)
 - Properly closed and secured
 - Appropriate for the packing group and transport mode
+
+Packaging requirements for dangerous goods are separate from Incoterms obligations, but the two interact — under Incoterms rules, risk transfer points determine who bears responsibility for packaging integrity during different legs of the journey. For a visual guide to risk transfer under different Incoterms, see our [Incoterms 2020 guide](/articles/incoterms-explained-visual-uk-guide/).
 
 **Labelling requirements:** Each package must display hazard labels corresponding to the primary hazard class and any subsidiary risks. Labels are diamond-shaped, colour-coded by class, and must be at least 100mm x 100mm (smaller for very small packages). Labels must be durable, weather-resistant, and clearly visible.
 

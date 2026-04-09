@@ -5,7 +5,6 @@ pubDate: 2026-04-09
 author: "LogisticsEdge"
 category: "logistics"
 tags: ["bill of lading", "telex release", "sea waybill", "shipping documents", "document of title"]
-image: "/images/articles/bill-of-lading-explained-uk.jpg"
 draft: false
 ---
 

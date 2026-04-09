@@ -5,6 +5,7 @@ pubDate: 2026-04-09
 author: "LogisticsEdge"
 category: "customs"
 tags: ["postponed VAT accounting", "import VAT", "CDS", "VAT return"]
+image: "/images/articles/import-vat-postponed-accounting-uk.jpg"
 draft: false
 ---
 
@@ -24,7 +25,7 @@ Postponed VAT Accounting (PVA) is a HMRC procedure that allows UK VAT-registered
 
 PVA became the permanent system for handling import VAT after Brexit, replacing the temporary deferred VAT arrangements that operated during the transition period. According to HMRC guidance, any VAT-registered business can use PVA without needing to apply or register for it separately. You simply confirm your intention to use PVA when making your customs declaration through the Customs Declaration Service (CDS).
 
-The key benefit is cash flow. Under the old system, importers had to pay import VAT at the border and wait for HMRC to issue a C79 certificate before they could reclaim it — a process that could take weeks. With PVA, the VAT is accounted for and recovered in the same accounting period, keeping your working capital intact while maintaining full compliance with HMRC requirements.
+The key benefit is cash flow. Under the old system, importers had to pay import VAT at the border and wait for HMRC to issue a C79 certificate before they could reclaim it — a process that could take weeks. With PVA, the VAT is accounted for and recovered in the same accounting period, keeping your working capital intact while maintaining full compliance with HMRC requirements. For businesses new to importing, PVA works alongside the standard customs clearance process — see our [customs clearance step-by-step guide](/articles/customs-clearance-uk-step-by-step-guide/) for the full workflow.
 
 ## How PVA Works: Step by Step
 
@@ -32,7 +33,7 @@ Using Postponed VAT Accounting follows a straightforward process that integrates
 
 **Step 1: Make your customs declaration**
 
-When your customs agent or freight forwarder submits your import declaration through CDS, they must indicate that you are using PVA. This is done by completing the relevant declaration fields that confirm postponed VAT accounting is being applied. You do not need to tell HMRC in advance or complete any separate application form.
+When your customs agent or freight forwarder submits your import declaration through CDS, they must indicate that you are using PVA. This is done by completing the relevant declaration fields that confirm postponed VAT accounting is being applied. You do not need to tell HMRC in advance or complete any separate application form. You will need a valid EORI number to make customs declarations — for guidance on obtaining one, see our [EORI number complete guide](/articles/eori-number-uk-complete-guide/).
 
 **Step 2: Goods clear customs**
 
@@ -78,7 +79,7 @@ You must also include the total value of your imports (excluding VAT) in Box 7 o
 
 **Reconciling discrepancies**
 
-If the figures on your PVA statement do not match your records, you should investigate before submitting your VAT return. Common causes include declarations made in a different period than expected, or errors in the customs declaration. You can download detailed import entry data from CDS to reconcile individual transactions. If you find an error, work with your customs agent to correct the declaration.
+If the figures on your PVA statement do not match your records, you should investigate before submitting your VAT return. Common causes include declarations made in a different period than expected, or errors in the customs declaration. You can download detailed import entry data from CDS to reconcile individual transactions. If you find an error, work with your customs agent to correct the declaration. PVA applies to import VAT only — customs duty must still be calculated based on the correct commodity code. For help with classification, see our [commodity code classification tips](/articles/commodity-code-classification-tips/).
 
 According to Xero's UK guidance, businesses should treat the PVA statement as the authoritative source for VAT return figures, but always verify against your own commercial records to catch any declaration errors early.
 
