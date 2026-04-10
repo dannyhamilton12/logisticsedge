@@ -305,7 +305,7 @@ Air freight at $2-3/kg suits high-value, low-weight goods (electronics, pharmace
 Demurrage is charged by port terminals when containers remain in port beyond free time (typically 3-5 days). Detention is charged by shipping lines when containers are held outside the port beyond allowed days (typically 5-7 days). Both can run £50-£150 per day. Plan customs clearance and warehouse unloading to avoid these charges.
 
 **Can I negotiate better freight rates as a small importer?**
-Yes, though leverage increases with volume. Even at 5-10 containers monthly, you can:
+Yes, though negotiating power increases with volume. Even at 5-10 containers monthly, you can:
 - Request contract rates rather than spot pricing
 - Bundle origin/destination pairs for volume discounts
 - Join shipping associations or buying groups for collective bargaining
